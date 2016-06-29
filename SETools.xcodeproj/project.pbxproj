@@ -1,0 +1,1584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D70318141D1CF4550023F596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70318131D1CF4550023F596 /* AppDelegate.swift */; };
+		D70318161D1CF4550023F596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D70318151D1CF4550023F596 /* Assets.xcassets */; };
+		D70318191D1CF4550023F596 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D70318171D1CF4550023F596 /* MainMenu.xib */; };
+		D70318271D1CF4670023F596 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70318261D1CF4670023F596 /* Cocoa.framework */; };
+		D703182C1D1CF4680023F596 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703182B1D1CF4680023F596 /* SourceEditorExtension.swift */; };
+		D703182E1D1CF4680023F596 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703182D1D1CF4680023F596 /* SourceEditorCommand.swift */; };
+		D70318321D1CF4680023F596 /* Figlet.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D70318241D1CF4670023F596 /* Figlet.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D774B2ED1D211CA9009A62E4 /* XFigfont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D774B2EC1D211CA9009A62E4 /* XFigfont.swift */; };
+		D78F18161D208AF700E34331 /* 1Row.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC831D20828800460D61 /* 1Row.flf */; };
+		D78F18171D208AF700E34331 /* 3-D.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC841D20828800460D61 /* 3-D.flf */; };
+		D78F18181D208AF700E34331 /* 3D Diagonal.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC851D20828800460D61 /* 3D Diagonal.flf */; };
+		D78F18191D208AF700E34331 /* 3D-ASCII.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC861D20828800460D61 /* 3D-ASCII.flf */; };
+		D78F181A1D208AF700E34331 /* 3x5.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC871D20828800460D61 /* 3x5.flf */; };
+		D78F181B1D208AF700E34331 /* 4Max.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC881D20828800460D61 /* 4Max.flf */; };
+		D78F181C1D208AF700E34331 /* 5 Line Oblique.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC891D20828800460D61 /* 5 Line Oblique.flf */; };
+		D78F181D1D208AF700E34331 /* Acrobatic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC8A1D20828800460D61 /* Acrobatic.flf */; };
+		D78F181E1D208AF700E34331 /* Alligator.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC8B1D20828800460D61 /* Alligator.flf */; };
+		D78F181F1D208AF700E34331 /* Alligator2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC8C1D20828800460D61 /* Alligator2.flf */; };
+		D78F18201D208AF700E34331 /* Alpha.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC8D1D20828800460D61 /* Alpha.flf */; };
+		D78F18211D208AF700E34331 /* Alphabet.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC8E1D20828800460D61 /* Alphabet.flf */; };
+		D78F18221D208AF700E34331 /* AMC 3 Line.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC8F1D20828800460D61 /* AMC 3 Line.flf */; };
+		D78F18231D208AF700E34331 /* AMC 3 Liv1.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC901D20828800460D61 /* AMC 3 Liv1.flf */; };
+		D78F18241D208AF700E34331 /* AMC AAA01.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC911D20828800460D61 /* AMC AAA01.flf */; };
+		D78F18251D208AF700E34331 /* AMC Neko.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC921D20828800460D61 /* AMC Neko.flf */; };
+		D78F18261D208AF700E34331 /* AMC Razor.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC931D20828800460D61 /* AMC Razor.flf */; };
+		D78F18271D208AF700E34331 /* AMC Razor2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC941D20828800460D61 /* AMC Razor2.flf */; };
+		D78F18281D208AF700E34331 /* AMC Slash.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC951D20828800460D61 /* AMC Slash.flf */; };
+		D78F18291D208AF700E34331 /* AMC Slider.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC961D20828800460D61 /* AMC Slider.flf */; };
+		D78F182A1D208AF700E34331 /* AMC Thin.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC971D20828800460D61 /* AMC Thin.flf */; };
+		D78F182B1D208AF700E34331 /* AMC Tubes.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC981D20828800460D61 /* AMC Tubes.flf */; };
+		D78F182C1D208AF700E34331 /* AMC Untitled.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC991D20828800460D61 /* AMC Untitled.flf */; };
+		D78F182D1D208AF700E34331 /* ANSI Shadow.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC9A1D20828800460D61 /* ANSI Shadow.flf */; };
+		D78F182E1D208AF700E34331 /* Arrows.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC9B1D20828800460D61 /* Arrows.flf */; };
+		D78F182F1D208AF700E34331 /* ASCII New Roman.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC9C1D20828800460D61 /* ASCII New Roman.flf */; };
+		D78F18301D208AF700E34331 /* Avatar.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC9D1D20828800460D61 /* Avatar.flf */; };
+		D78F18311D208AF700E34331 /* Banner.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC9E1D20828800460D61 /* Banner.flf */; };
+		D78F18321D208AF700E34331 /* Banner3-D.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DC9F1D20828800460D61 /* Banner3-D.flf */; };
+		D78F18331D208AF700E34331 /* Banner3.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA01D20828800460D61 /* Banner3.flf */; };
+		D78F18341D208AF700E34331 /* Banner4.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA11D20828800460D61 /* Banner4.flf */; };
+		D78F18351D208AF700E34331 /* Barbwire.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA21D20828800460D61 /* Barbwire.flf */; };
+		D78F18361D208AF700E34331 /* Basic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA31D20828800460D61 /* Basic.flf */; };
+		D78F18371D208AF700E34331 /* Bear.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA41D20828800460D61 /* Bear.flf */; };
+		D78F18381D208AF700E34331 /* Bell.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA51D20828800460D61 /* Bell.flf */; };
+		D78F18391D208AF700E34331 /* Benjamin.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA61D20828800460D61 /* Benjamin.flf */; };
+		D78F183A1D208AF700E34331 /* Big Chief.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA71D20828800460D61 /* Big Chief.flf */; };
+		D78F183B1D208AF700E34331 /* Big Money-ne.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA81D20828800460D61 /* Big Money-ne.flf */; };
+		D78F183C1D208AF700E34331 /* Big Money-nw.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCA91D20828800460D61 /* Big Money-nw.flf */; };
+		D78F183D1D208AF700E34331 /* Big Money-se.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCAA1D20828800460D61 /* Big Money-se.flf */; };
+		D78F183E1D208AF700E34331 /* Big Money-sw.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCAB1D20828800460D61 /* Big Money-sw.flf */; };
+		D78F183F1D208AF700E34331 /* Big.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCAC1D20828800460D61 /* Big.flf */; };
+		D78F18401D208AF700E34331 /* Bigfig.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCAD1D20828800460D61 /* Bigfig.flf */; };
+		D78F18411D208AF700E34331 /* Block.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCAE1D20828800460D61 /* Block.flf */; };
+		D78F18421D208AF700E34331 /* Blocks.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCAF1D20828800460D61 /* Blocks.flf */; };
+		D78F18431D208AF700E34331 /* Bloody.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB01D20828800460D61 /* Bloody.flf */; };
+		D78F18441D208AF700E34331 /* Bolger.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB11D20828800460D61 /* Bolger.flf */; };
+		D78F18451D208AF700E34331 /* Braced.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB21D20828800460D61 /* Braced.flf */; };
+		D78F18461D208AF700E34331 /* Bright.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB31D20828800460D61 /* Bright.flf */; };
+		D78F18471D208AF700E34331 /* Broadway KB.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB41D20828800460D61 /* Broadway KB.flf */; };
+		D78F18481D208AF700E34331 /* Broadway.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB51D20828800460D61 /* Broadway.flf */; };
+		D78F18491D208AF700E34331 /* Bubble.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB61D20828800460D61 /* Bubble.flf */; };
+		D78F184A1D208AF700E34331 /* Bulbhead.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB71D20828800460D61 /* Bulbhead.flf */; };
+		D78F184B1D208AF700E34331 /* Caligraphy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB81D20828800460D61 /* Caligraphy.flf */; };
+		D78F184C1D208AF700E34331 /* Caligraphy2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCB91D20828800460D61 /* Caligraphy2.flf */; };
+		D78F184D1D208AF700E34331 /* Calvin S.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCBA1D20828800460D61 /* Calvin S.flf */; };
+		D78F184E1D208AF700E34331 /* Cards.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCBB1D20828800460D61 /* Cards.flf */; };
+		D78F184F1D208AF700E34331 /* Catwalk.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCBC1D20828800460D61 /* Catwalk.flf */; };
+		D78F18501D208AF700E34331 /* Chiseled.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCBD1D20828800460D61 /* Chiseled.flf */; };
+		D78F18511D208AF700E34331 /* Chunky.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCBE1D20828800460D61 /* Chunky.flf */; };
+		D78F18521D208AF700E34331 /* Coinstak.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCBF1D20828800460D61 /* Coinstak.flf */; };
+		D78F18531D208AF700E34331 /* Cola.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC01D20828800460D61 /* Cola.flf */; };
+		D78F18541D208AF700E34331 /* Colossal.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC11D20828800460D61 /* Colossal.flf */; };
+		D78F18551D208AF700E34331 /* Computer.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC21D20828800460D61 /* Computer.flf */; };
+		D78F18561D208AF700E34331 /* Contessa.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC31D20828800460D61 /* Contessa.flf */; };
+		D78F18571D208AF700E34331 /* Contrast.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC41D20828800460D61 /* Contrast.flf */; };
+		D78F18581D208AF700E34331 /* Cosmike.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC51D20828800460D61 /* Cosmike.flf */; };
+		D78F18591D208AF700E34331 /* Crawford.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC61D20828800460D61 /* Crawford.flf */; };
+		D78F185A1D208AF700E34331 /* Crawford2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC71D20828800460D61 /* Crawford2.flf */; };
+		D78F185B1D208AF700E34331 /* Crazy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC81D20828800460D61 /* Crazy.flf */; };
+		D78F185C1D208AF700E34331 /* Cricket.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCC91D20828800460D61 /* Cricket.flf */; };
+		D78F185D1D208AF700E34331 /* Cursive.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCCA1D20828800460D61 /* Cursive.flf */; };
+		D78F185E1D208AF700E34331 /* Cyberlarge.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCCB1D20828800460D61 /* Cyberlarge.flf */; };
+		D78F185F1D208AF700E34331 /* Cybermedium.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCCC1D20828800460D61 /* Cybermedium.flf */; };
+		D78F18601D208AF700E34331 /* Cybersmall.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCCD1D20828800460D61 /* Cybersmall.flf */; };
+		D78F18611D208AF700E34331 /* Cygnet.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCCE1D20828800460D61 /* Cygnet.flf */; };
+		D78F18621D208AF700E34331 /* DANC4.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCCF1D20828800460D61 /* DANC4.flf */; };
+		D78F18631D208AF700E34331 /* Dancing Font.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD01D20828800460D61 /* Dancing Font.flf */; };
+		D78F18641D208AF700E34331 /* Def Leppard.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD11D20828800460D61 /* Def Leppard.flf */; };
+		D78F18651D208AF700E34331 /* Delta Corps Priest 1.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD21D20828800460D61 /* Delta Corps Priest 1.flf */; };
+		D78F18661D208AF700E34331 /* Diamond.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD31D20828800460D61 /* Diamond.flf */; };
+		D78F18671D208AF700E34331 /* Diet Cola.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD41D20828800460D61 /* Diet Cola.flf */; };
+		D78F18681D208AF700E34331 /* Digital.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD51D20828800460D61 /* Digital.flf */; };
+		D78F18691D208AF700E34331 /* Doh.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD61D20828800460D61 /* Doh.flf */; };
+		D78F186A1D208AF700E34331 /* Doom.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD71D20828800460D61 /* Doom.flf */; };
+		D78F186B1D208AF700E34331 /* Dot Matrix.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD81D20828800460D61 /* Dot Matrix.flf */; };
+		D78F186C1D208AF700E34331 /* Double Shorts.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCD91D20828800460D61 /* Double Shorts.flf */; };
+		D78F186D1D208AF700E34331 /* Double.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCDA1D20828800460D61 /* Double.flf */; };
+		D78F186E1D208AF700E34331 /* Dr Pepper.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCDB1D20828800460D61 /* Dr Pepper.flf */; };
+		D78F186F1D208AF700E34331 /* DWhistled.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCDC1D20828800460D61 /* DWhistled.flf */; };
+		D78F18701D208AF700E34331 /* Efti Chess.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCDD1D20828800460D61 /* Efti Chess.flf */; };
+		D78F18711D208AF700E34331 /* Efti Font.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCDE1D20828800460D61 /* Efti Font.flf */; };
+		D78F18721D208AF700E34331 /* Efti Italic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCDF1D20828800460D61 /* Efti Italic.flf */; };
+		D78F18731D208AF700E34331 /* Efti Piti.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE01D20828800460D61 /* Efti Piti.flf */; };
+		D78F18741D208AF700E34331 /* Efti Robot.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE11D20828800460D61 /* Efti Robot.flf */; };
+		D78F18751D208AF700E34331 /* Efti Wall.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE21D20828800460D61 /* Efti Wall.flf */; };
+		D78F18761D208AF700E34331 /* Efti Water.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE31D20828800460D61 /* Efti Water.flf */; };
+		D78F18771D208AF700E34331 /* Electronic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE41D20828800460D61 /* Electronic.flf */; };
+		D78F18781D208AF700E34331 /* Elite.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE51D20828800460D61 /* Elite.flf */; };
+		D78F18791D208AF700E34331 /* Epic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE61D20828800460D61 /* Epic.flf */; };
+		D78F187A1D208AF700E34331 /* Fender.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE71D20828800460D61 /* Fender.flf */; };
+		D78F187B1D208AF700E34331 /* Filter.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE81D20828800460D61 /* Filter.flf */; };
+		D78F187C1D208AF700E34331 /* Fire Font-k.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCE91D20828800460D61 /* Fire Font-k.flf */; };
+		D78F187D1D208AF700E34331 /* Fire Font-s.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCEA1D20828800460D61 /* Fire Font-s.flf */; };
+		D78F187E1D208AF700E34331 /* Flipped.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCEB1D20828800460D61 /* Flipped.flf */; };
+		D78F187F1D208AF700E34331 /* Flower Power.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCEC1D20828800460D61 /* Flower Power.flf */; };
+		D78F18801D208AF700E34331 /* Four Tops.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCED1D20828800460D61 /* Four Tops.flf */; };
+		D78F18811D208AF700E34331 /* Fraktur.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCEE1D20828800460D61 /* Fraktur.flf */; };
+		D78F18821D208AF700E34331 /* Fun Face.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCEF1D20828800460D61 /* Fun Face.flf */; };
+		D78F18831D208AF700E34331 /* Fun Faces.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF01D20828800460D61 /* Fun Faces.flf */; };
+		D78F18841D208AF700E34331 /* Fuzzy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF11D20828800460D61 /* Fuzzy.flf */; };
+		D78F18851D208AF700E34331 /* Georgi16.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF21D20828800460D61 /* Georgi16.flf */; };
+		D78F18861D208AF700E34331 /* Georgia11.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF31D20828800460D61 /* Georgia11.flf */; };
+		D78F18871D208AF700E34331 /* Ghost.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF41D20828800460D61 /* Ghost.flf */; };
+		D78F18881D208AF700E34331 /* Ghoulish.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF51D20828800460D61 /* Ghoulish.flf */; };
+		D78F18891D208AF700E34331 /* Glenyn.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF61D20828800460D61 /* Glenyn.flf */; };
+		D78F188A1D208AF700E34331 /* Goofy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF71D20828800460D61 /* Goofy.flf */; };
+		D78F188B1D208AF700E34331 /* Gothic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF81D20828900460D61 /* Gothic.flf */; };
+		D78F188C1D208AF700E34331 /* Graceful.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCF91D20828900460D61 /* Graceful.flf */; };
+		D78F188D1D208AF700E34331 /* Gradient.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCFA1D20828900460D61 /* Gradient.flf */; };
+		D78F188E1D208AF700E34331 /* Graffiti.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCFB1D20828900460D61 /* Graffiti.flf */; };
+		D78F188F1D208AF700E34331 /* Greek.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCFC1D20828900460D61 /* Greek.flf */; };
+		D78F18901D208AF700E34331 /* Heart Left.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCFD1D20828900460D61 /* Heart Left.flf */; };
+		D78F18911D208AF700E34331 /* Heart Right.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCFE1D20828900460D61 /* Heart Right.flf */; };
+		D78F18921D208AF700E34331 /* Henry 3D.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DCFF1D20828900460D61 /* Henry 3D.flf */; };
+		D78F18931D208AF700E34331 /* Hieroglyphs.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD001D20828900460D61 /* Hieroglyphs.flf */; };
+		D78F18941D208AF700E34331 /* Hollywood.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD011D20828900460D61 /* Hollywood.flf */; };
+		D78F18951D208AF700E34331 /* Horizontal Left.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD021D20828900460D61 /* Horizontal Left.flf */; };
+		D78F18961D208AF700E34331 /* Horizontal Right.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD031D20828900460D61 /* Horizontal Right.flf */; };
+		D78F18971D208AF700E34331 /* ICL-1900.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD041D20828900460D61 /* ICL-1900.flf */; };
+		D78F18981D208AF700E34331 /* Impossible.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD051D20828900460D61 /* Impossible.flf */; };
+		D78F18991D208AF700E34331 /* Invita.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD061D20828900460D61 /* Invita.flf */; };
+		D78F189A1D208AF700E34331 /* Isometric1.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD071D20828900460D61 /* Isometric1.flf */; };
+		D78F189B1D208AF700E34331 /* Isometric2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD081D20828900460D61 /* Isometric2.flf */; };
+		D78F189C1D208AF700E34331 /* Isometric3.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD091D20828900460D61 /* Isometric3.flf */; };
+		D78F189D1D208AF700E34331 /* Isometric4.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD0A1D20828900460D61 /* Isometric4.flf */; };
+		D78F189E1D208AF700E34331 /* Italic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD0B1D20828900460D61 /* Italic.flf */; };
+		D78F189F1D208AF700E34331 /* Ivrit.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD0C1D20828900460D61 /* Ivrit.flf */; };
+		D78F18A01D208AF700E34331 /* Jacky.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD0D1D20828900460D61 /* Jacky.flf */; };
+		D78F18A11D208AF700E34331 /* Jazmine.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD0E1D20828900460D61 /* Jazmine.flf */; };
+		D78F18A21D208AF700E34331 /* Jerusalem.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD0F1D20828900460D61 /* Jerusalem.flf */; };
+		D78F18A31D208AF700E34331 /* JS Block Letters.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD101D20828900460D61 /* JS Block Letters.flf */; };
+		D78F18A41D208AF700E34331 /* JS Capital Curves.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD111D20828900460D61 /* JS Capital Curves.flf */; };
+		D78F18A51D208AF700E34331 /* JS Stick Letters.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD121D20828900460D61 /* JS Stick Letters.flf */; };
+		D78F18A61D208AF700E34331 /* Katakana.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD131D20828900460D61 /* Katakana.flf */; };
+		D78F18A71D208AF700E34331 /* Kban.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD141D20828900460D61 /* Kban.flf */; };
+		D78F18A81D208AF700E34331 /* Keyboard.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD151D20828900460D61 /* Keyboard.flf */; };
+		D78F18A91D208AF700E34331 /* Knob.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD161D20828900460D61 /* Knob.flf */; };
+		D78F18AA1D208AF700E34331 /* Konto Slant.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD171D20828900460D61 /* Konto Slant.flf */; };
+		D78F18AB1D208AF700E34331 /* Konto.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD181D20828900460D61 /* Konto.flf */; };
+		D78F18AC1D208AF700E34331 /* Larry 3D 2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD191D20828900460D61 /* Larry 3D 2.flf */; };
+		D78F18AD1D208AF700E34331 /* Larry 3D.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD1A1D20828900460D61 /* Larry 3D.flf */; };
+		D78F18AE1D208AF700E34331 /* LCD.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD1B1D20828900460D61 /* LCD.flf */; };
+		D78F18AF1D208AF700E34331 /* Lean.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD1C1D20828900460D61 /* Lean.flf */; };
+		D78F18B01D208AF700E34331 /* Letters.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD1D1D20828900460D61 /* Letters.flf */; };
+		D78F18B11D208AF700E34331 /* Lil Devil.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD1E1D20828900460D61 /* Lil Devil.flf */; };
+		D78F18B21D208AF700E34331 /* Line Blocks.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD1F1D20828900460D61 /* Line Blocks.flf */; };
+		D78F18B31D208AF700E34331 /* Linux.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD201D20828900460D61 /* Linux.flf */; };
+		D78F18B41D208AF700E34331 /* Lockergnome.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD211D20828900460D61 /* Lockergnome.flf */; };
+		D78F18B51D208AF700E34331 /* Madrid.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD221D20828900460D61 /* Madrid.flf */; };
+		D78F18B61D208AF700E34331 /* Marquee.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD231D20828900460D61 /* Marquee.flf */; };
+		D78F18B71D208AF700E34331 /* Maxfour.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD241D20828900460D61 /* Maxfour.flf */; };
+		D78F18B81D208AF700E34331 /* Merlin1.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD251D20828900460D61 /* Merlin1.flf */; };
+		D78F18B91D208AF700E34331 /* Merlin2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD261D20828900460D61 /* Merlin2.flf */; };
+		D78F18BA1D208AF700E34331 /* Mike.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD271D20828900460D61 /* Mike.flf */; };
+		D78F18BB1D208AF700E34331 /* Mini.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD281D20828900460D61 /* Mini.flf */; };
+		D78F18BC1D208AF700E34331 /* Mirror.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD291D20828900460D61 /* Mirror.flf */; };
+		D78F18BD1D208AF700E34331 /* Mnemonic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD2A1D20828900460D61 /* Mnemonic.flf */; };
+		D78F18BE1D208AF700E34331 /* Modular.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD2B1D20828900460D61 /* Modular.flf */; };
+		D78F18BF1D208AF700E34331 /* Moscow.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD2C1D20828900460D61 /* Moscow.flf */; };
+		D78F18C01D208AF700E34331 /* Mshebrew210.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD2D1D20828900460D61 /* Mshebrew210.flf */; };
+		D78F18C11D208AF800E34331 /* Muzzle.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD2E1D20828900460D61 /* Muzzle.flf */; };
+		D78F18C21D208AF800E34331 /* Nancyj-Fancy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD2F1D20828900460D61 /* Nancyj-Fancy.flf */; };
+		D78F18C31D208AF800E34331 /* Nancyj-Improved.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD301D20828900460D61 /* Nancyj-Improved.flf */; };
+		D78F18C41D208AF800E34331 /* Nancyj-Underlined.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD311D20828900460D61 /* Nancyj-Underlined.flf */; };
+		D78F18C51D208AF800E34331 /* Nancyj.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD321D20828900460D61 /* Nancyj.flf */; };
+		D78F18C61D208AF800E34331 /* Nipples.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD331D20828900460D61 /* Nipples.flf */; };
+		D78F18C71D208AF800E34331 /* NScript.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD341D20828900460D61 /* NScript.flf */; };
+		D78F18C81D208AF800E34331 /* NT Greek.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD351D20828900460D61 /* NT Greek.flf */; };
+		D78F18C91D208AF800E34331 /* NV Script.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD361D20828900460D61 /* NV Script.flf */; };
+		D78F18CA1D208AF800E34331 /* O8.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD371D20828900460D61 /* O8.flf */; };
+		D78F18CB1D208AF800E34331 /* Ogre.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD381D20828900460D61 /* Ogre.flf */; };
+		D78F18CC1D208AF800E34331 /* Old Banner.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD391D20828900460D61 /* Old Banner.flf */; };
+		D78F18CD1D208AF800E34331 /* OS2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD3A1D20828900460D61 /* OS2.flf */; };
+		D78F18CE1D208AF800E34331 /* Patorjk-HeX.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD3B1D20828900460D61 /* Patorjk-HeX.flf */; };
+		D78F18CF1D208AF800E34331 /* Patorjk's Cheese.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD3C1D20828900460D61 /* Patorjk's Cheese.flf */; };
+		D78F18D01D208AF800E34331 /* Pawp.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD3D1D20828900460D61 /* Pawp.flf */; };
+		D78F18D11D208AF800E34331 /* Peaks Slant.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD3E1D20828900460D61 /* Peaks Slant.flf */; };
+		D78F18D21D208AF800E34331 /* Peaks.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD3F1D20828900460D61 /* Peaks.flf */; };
+		D78F18D31D208AF800E34331 /* Pebbles.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD401D20828900460D61 /* Pebbles.flf */; };
+		D78F18D41D208AF800E34331 /* Pepper.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD411D20828900460D61 /* Pepper.flf */; };
+		D78F18D51D208AF800E34331 /* Poison.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD421D20828900460D61 /* Poison.flf */; };
+		D78F18D61D208AF800E34331 /* Puffy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD431D20828900460D61 /* Puffy.flf */; };
+		D78F18D71D208AF800E34331 /* Puzzle.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD441D20828900460D61 /* Puzzle.flf */; };
+		D78F18D81D208AF800E34331 /* Pyramid.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD451D20828900460D61 /* Pyramid.flf */; };
+		D78F18D91D208AF800E34331 /* Rammstein.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD461D20828900460D61 /* Rammstein.flf */; };
+		D78F18DA1D208AF800E34331 /* Rectangles.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD471D20828900460D61 /* Rectangles.flf */; };
+		D78F18DB1D208AF800E34331 /* Red Phoenix.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD481D20828900460D61 /* Red Phoenix.flf */; };
+		D78F18DC1D208AF800E34331 /* Relief.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD491D20828900460D61 /* Relief.flf */; };
+		D78F18DD1D208AF800E34331 /* Relief2.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD4A1D20828900460D61 /* Relief2.flf */; };
+		D78F18DE1D208AF800E34331 /* Reverse.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD4B1D20828900460D61 /* Reverse.flf */; };
+		D78F18DF1D208AF800E34331 /* Roman.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD4C1D20828900460D61 /* Roman.flf */; };
+		D78F18E01D208AF800E34331 /* Rotated.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD4D1D20828900460D61 /* Rotated.flf */; };
+		D78F18E11D208AF800E34331 /* Rounded.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD4E1D20828900460D61 /* Rounded.flf */; };
+		D78F18E21D208AF800E34331 /* Rowan Cap.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD4F1D20828900460D61 /* Rowan Cap.flf */; };
+		D78F18E31D208AF800E34331 /* Rozzo.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD501D20828900460D61 /* Rozzo.flf */; };
+		D78F18E41D208AF800E34331 /* Runic.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD511D20828900460D61 /* Runic.flf */; };
+		D78F18E51D208AF800E34331 /* Runyc.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD521D20828900460D61 /* Runyc.flf */; };
+		D78F18E61D208AF800E34331 /* S Blood.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD531D20828900460D61 /* S Blood.flf */; };
+		D78F18E71D208AF800E34331 /* Santa Clara.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD541D20828900460D61 /* Santa Clara.flf */; };
+		D78F18E81D208AF800E34331 /* Script.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD551D20828900460D61 /* Script.flf */; };
+		D78F18E91D208AF800E34331 /* Serifcap.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD561D20828900460D61 /* Serifcap.flf */; };
+		D78F18EA1D208AF800E34331 /* Shadow.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD571D20828900460D61 /* Shadow.flf */; };
+		D78F18EB1D208AF800E34331 /* Shimrod.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD581D20828900460D61 /* Shimrod.flf */; };
+		D78F18EC1D208AF800E34331 /* Short.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD591D20828900460D61 /* Short.flf */; };
+		D78F18ED1D208AF800E34331 /* SL Script.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD5A1D20828900460D61 /* SL Script.flf */; };
+		D78F18EE1D208AF800E34331 /* Slant Relief.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD5B1D20828900460D61 /* Slant Relief.flf */; };
+		D78F18EF1D208AF800E34331 /* Slant.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD5C1D20828900460D61 /* Slant.flf */; };
+		D78F18F01D208AF800E34331 /* Slide.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD5D1D20828900460D61 /* Slide.flf */; };
+		D78F18F11D208AF800E34331 /* Small Caps.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD5E1D20828900460D61 /* Small Caps.flf */; };
+		D78F18F21D208AF800E34331 /* Small Isometric1.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD5F1D20828900460D61 /* Small Isometric1.flf */; };
+		D78F18F31D208AF800E34331 /* Small Keyboard.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD601D20828900460D61 /* Small Keyboard.flf */; };
+		D78F18F41D208AF800E34331 /* Small Poison.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD611D20828900460D61 /* Small Poison.flf */; };
+		D78F18F51D208AF800E34331 /* Small Script.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD621D20828900460D61 /* Small Script.flf */; };
+		D78F18F61D208AF800E34331 /* Small Shadow.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD631D20828900460D61 /* Small Shadow.flf */; };
+		D78F18F71D208AF800E34331 /* Small Slant.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD641D20828900460D61 /* Small Slant.flf */; };
+		D78F18F81D208AF800E34331 /* Small Tengwar.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD651D20828900460D61 /* Small Tengwar.flf */; };
+		D78F18F91D208AF800E34331 /* Small.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD661D20828900460D61 /* Small.flf */; };
+		D78F18FA1D208AF800E34331 /* Soft.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD671D20828900460D61 /* Soft.flf */; };
+		D78F18FB1D208AF800E34331 /* Speed.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD681D20828900460D61 /* Speed.flf */; };
+		D78F18FC1D208AF800E34331 /* Spliff.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD691D20828900460D61 /* Spliff.flf */; };
+		D78F18FD1D208AF800E34331 /* Stacey.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD6A1D20828900460D61 /* Stacey.flf */; };
+		D78F18FE1D208AF800E34331 /* Stampate.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD6B1D20828900460D61 /* Stampate.flf */; };
+		D78F18FF1D208AF800E34331 /* Stampatello.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD6C1D20828900460D61 /* Stampatello.flf */; };
+		D78F19001D208AF800E34331 /* Standard.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD6D1D20828900460D61 /* Standard.flf */; };
+		D78F19011D208AF800E34331 /* Star Strips.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD6E1D20828900460D61 /* Star Strips.flf */; };
+		D78F19021D208AF800E34331 /* Star Wars.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD6F1D20828900460D61 /* Star Wars.flf */; };
+		D78F19031D208AF800E34331 /* Stellar.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD701D20828900460D61 /* Stellar.flf */; };
+		D78F19041D208AF800E34331 /* Stforek.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD711D20828900460D61 /* Stforek.flf */; };
+		D78F19051D208AF800E34331 /* Stick Letters.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD721D20828900460D61 /* Stick Letters.flf */; };
+		D78F19061D208AF800E34331 /* Stop.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD731D20828900460D61 /* Stop.flf */; };
+		D78F19071D208AF800E34331 /* Straight.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD741D20828900460D61 /* Straight.flf */; };
+		D78F19081D208AF800E34331 /* Stronger Than All.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD751D20828900460D61 /* Stronger Than All.flf */; };
+		D78F19091D208AF800E34331 /* Sub-Zero.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD761D20828900460D61 /* Sub-Zero.flf */; };
+		D78F190A1D208AF800E34331 /* Swamp Land.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD771D20828900460D61 /* Swamp Land.flf */; };
+		D78F190B1D208AF800E34331 /* Swan.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD781D20828900460D61 /* Swan.flf */; };
+		D78F190C1D208AF800E34331 /* Sweet.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD791D20828900460D61 /* Sweet.flf */; };
+		D78F190D1D208AF800E34331 /* Tanja.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD7A1D20828900460D61 /* Tanja.flf */; };
+		D78F190E1D208AF800E34331 /* Tengwar.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD7B1D20828900460D61 /* Tengwar.flf */; };
+		D78F190F1D208AF800E34331 /* Test1.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD7C1D20828900460D61 /* Test1.flf */; };
+		D78F19101D208AF800E34331 /* The Edge.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD7D1D20828900460D61 /* The Edge.flf */; };
+		D78F19111D208AF800E34331 /* Thick.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD7E1D20828900460D61 /* Thick.flf */; };
+		D78F19121D208AF800E34331 /* Thin.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD7F1D20828900460D61 /* Thin.flf */; };
+		D78F19131D208AF800E34331 /* THIS.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD801D20828900460D61 /* THIS.flf */; };
+		D78F19141D208AF800E34331 /* Thorned.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD811D20828900460D61 /* Thorned.flf */; };
+		D78F19151D208AF800E34331 /* Three Point.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD821D20828900460D61 /* Three Point.flf */; };
+		D78F19161D208AF800E34331 /* Ticks Slant.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD831D20828900460D61 /* Ticks Slant.flf */; };
+		D78F19171D208AF800E34331 /* Ticks.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD841D20828900460D61 /* Ticks.flf */; };
+		D78F19181D208AF800E34331 /* Tiles.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD851D20828900460D61 /* Tiles.flf */; };
+		D78F19191D208AF800E34331 /* Tinker-Toy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD861D20828900460D61 /* Tinker-Toy.flf */; };
+		D78F191A1D208AF800E34331 /* Tombstone.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD871D20828900460D61 /* Tombstone.flf */; };
+		D78F191B1D208AF800E34331 /* Train.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD881D20828900460D61 /* Train.flf */; };
+		D78F191C1D208AF800E34331 /* Trek.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD891D20828900460D61 /* Trek.flf */; };
+		D78F191D1D208AF800E34331 /* Tsalagi.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD8A1D20828900460D61 /* Tsalagi.flf */; };
+		D78F191E1D208AF800E34331 /* Tubular.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD8B1D20828900460D61 /* Tubular.flf */; };
+		D78F191F1D208AF800E34331 /* Twisted.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD8C1D20828900460D61 /* Twisted.flf */; };
+		D78F19201D208AF800E34331 /* Two Point.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD8D1D20828900460D61 /* Two Point.flf */; };
+		D78F19211D208AF800E34331 /* Univers.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD8E1D20828900460D61 /* Univers.flf */; };
+		D78F19221D208AF800E34331 /* USA Flag.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD8F1D20828900460D61 /* USA Flag.flf */; };
+		D78F19231D208AF800E34331 /* Varsity.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD901D20828900460D61 /* Varsity.flf */; };
+		D78F19241D208AF800E34331 /* Wavy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD911D20828900460D61 /* Wavy.flf */; };
+		D78F19251D208AF800E34331 /* Weird.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD921D20828900460D61 /* Weird.flf */; };
+		D78F19261D208AF800E34331 /* Wet Letter.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD931D20828900460D61 /* Wet Letter.flf */; };
+		D78F19271D208AF800E34331 /* Whimsy.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD941D20828900460D61 /* Whimsy.flf */; };
+		D78F19281D208AF800E34331 /* Wow.flf in Resources */ = {isa = PBXBuildFile; fileRef = D7D0DD951D20828900460D61 /* Wow.flf */; };
+		D7A75E2F1D216DD40006B8F8 /* XHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A75E2E1D216DD40006B8F8 /* XHelp.swift */; };
+		D7A75E331D216F420006B8F8 /* XHelpmenu.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7A75E321D216F420006B8F8 /* XHelpmenu.txt */; };
+		D7D0DC7E1D207DF400460D61 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D0DC7B1D207DF400460D61 /* Extensions.swift */; };
+		D7D0DC7F1D207DF400460D61 /* Figlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D0DC7C1D207DF400460D61 /* Figlet.swift */; };
+		D7D0DC801D207DF400460D61 /* FigletHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D0DC7D1D207DF400460D61 /* FigletHeader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D70318301D1CF4680023F596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D70318081D1CF4550023F596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D70318231D1CF4670023F596;
+			remoteInfo = Figlet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D70318361D1CF4680023F596 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D70318321D1CF4680023F596 /* Figlet.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D70318101D1CF4550023F596 /* SETools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SETools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70318131D1CF4550023F596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D70318151D1CF4550023F596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D70318181D1CF4550023F596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D703181A1D1CF4550023F596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70318241D1CF4670023F596 /* Figlet.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Figlet.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D70318261D1CF4670023F596 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D703182A1D1CF4680023F596 /* Figlet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Figlet.entitlements; sourceTree = "<group>"; };
+		D703182B1D1CF4680023F596 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		D703182D1D1CF4680023F596 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		D703182F1D1CF4680023F596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D774B2EC1D211CA9009A62E4 /* XFigfont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XFigfont.swift; sourceTree = "<group>"; };
+		D7A75E2E1D216DD40006B8F8 /* XHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XHelp.swift; sourceTree = "<group>"; };
+		D7A75E321D216F420006B8F8 /* XHelpmenu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XHelpmenu.txt; sourceTree = "<group>"; };
+		D7D0DC7B1D207DF400460D61 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D7D0DC7C1D207DF400460D61 /* Figlet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Figlet.swift; sourceTree = "<group>"; };
+		D7D0DC7D1D207DF400460D61 /* FigletHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigletHeader.swift; sourceTree = "<group>"; };
+		D7D0DC831D20828800460D61 /* 1Row.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = 1Row.flf; path = fonts/1Row.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC841D20828800460D61 /* 3-D.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "3-D.flf"; path = "fonts/3-D.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC851D20828800460D61 /* 3D Diagonal.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "3D Diagonal.flf"; path = "fonts/3D Diagonal.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC861D20828800460D61 /* 3D-ASCII.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "3D-ASCII.flf"; path = "fonts/3D-ASCII.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC871D20828800460D61 /* 3x5.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = 3x5.flf; path = fonts/3x5.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC881D20828800460D61 /* 4Max.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = 4Max.flf; path = fonts/4Max.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC891D20828800460D61 /* 5 Line Oblique.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "5 Line Oblique.flf"; path = "fonts/5 Line Oblique.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC8A1D20828800460D61 /* Acrobatic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Acrobatic.flf; path = fonts/Acrobatic.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC8B1D20828800460D61 /* Alligator.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Alligator.flf; path = fonts/Alligator.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC8C1D20828800460D61 /* Alligator2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Alligator2.flf; path = fonts/Alligator2.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC8D1D20828800460D61 /* Alpha.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Alpha.flf; path = fonts/Alpha.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC8E1D20828800460D61 /* Alphabet.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Alphabet.flf; path = fonts/Alphabet.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC8F1D20828800460D61 /* AMC 3 Line.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC 3 Line.flf"; path = "fonts/AMC 3 Line.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC901D20828800460D61 /* AMC 3 Liv1.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC 3 Liv1.flf"; path = "fonts/AMC 3 Liv1.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC911D20828800460D61 /* AMC AAA01.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC AAA01.flf"; path = "fonts/AMC AAA01.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC921D20828800460D61 /* AMC Neko.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC Neko.flf"; path = "fonts/AMC Neko.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC931D20828800460D61 /* AMC Razor.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC Razor.flf"; path = "fonts/AMC Razor.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC941D20828800460D61 /* AMC Razor2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC Razor2.flf"; path = "fonts/AMC Razor2.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC951D20828800460D61 /* AMC Slash.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC Slash.flf"; path = "fonts/AMC Slash.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC961D20828800460D61 /* AMC Slider.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC Slider.flf"; path = "fonts/AMC Slider.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC971D20828800460D61 /* AMC Thin.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC Thin.flf"; path = "fonts/AMC Thin.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC981D20828800460D61 /* AMC Tubes.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC Tubes.flf"; path = "fonts/AMC Tubes.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC991D20828800460D61 /* AMC Untitled.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AMC Untitled.flf"; path = "fonts/AMC Untitled.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC9A1D20828800460D61 /* ANSI Shadow.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ANSI Shadow.flf"; path = "fonts/ANSI Shadow.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC9B1D20828800460D61 /* Arrows.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Arrows.flf; path = fonts/Arrows.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC9C1D20828800460D61 /* ASCII New Roman.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ASCII New Roman.flf"; path = "fonts/ASCII New Roman.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DC9D1D20828800460D61 /* Avatar.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Avatar.flf; path = fonts/Avatar.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC9E1D20828800460D61 /* Banner.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Banner.flf; path = fonts/Banner.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DC9F1D20828800460D61 /* Banner3-D.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Banner3-D.flf"; path = "fonts/Banner3-D.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCA01D20828800460D61 /* Banner3.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Banner3.flf; path = fonts/Banner3.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCA11D20828800460D61 /* Banner4.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Banner4.flf; path = fonts/Banner4.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCA21D20828800460D61 /* Barbwire.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Barbwire.flf; path = fonts/Barbwire.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCA31D20828800460D61 /* Basic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Basic.flf; path = fonts/Basic.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCA41D20828800460D61 /* Bear.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Bear.flf; path = fonts/Bear.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCA51D20828800460D61 /* Bell.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Bell.flf; path = fonts/Bell.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCA61D20828800460D61 /* Benjamin.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Benjamin.flf; path = fonts/Benjamin.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCA71D20828800460D61 /* Big Chief.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Big Chief.flf"; path = "fonts/Big Chief.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCA81D20828800460D61 /* Big Money-ne.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Big Money-ne.flf"; path = "fonts/Big Money-ne.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCA91D20828800460D61 /* Big Money-nw.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Big Money-nw.flf"; path = "fonts/Big Money-nw.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCAA1D20828800460D61 /* Big Money-se.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Big Money-se.flf"; path = "fonts/Big Money-se.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCAB1D20828800460D61 /* Big Money-sw.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Big Money-sw.flf"; path = "fonts/Big Money-sw.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCAC1D20828800460D61 /* Big.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Big.flf; path = fonts/Big.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCAD1D20828800460D61 /* Bigfig.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Bigfig.flf; path = fonts/Bigfig.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCAE1D20828800460D61 /* Block.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Block.flf; path = fonts/Block.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCAF1D20828800460D61 /* Blocks.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Blocks.flf; path = fonts/Blocks.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB01D20828800460D61 /* Bloody.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Bloody.flf; path = fonts/Bloody.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB11D20828800460D61 /* Bolger.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Bolger.flf; path = fonts/Bolger.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB21D20828800460D61 /* Braced.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Braced.flf; path = fonts/Braced.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB31D20828800460D61 /* Bright.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Bright.flf; path = fonts/Bright.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB41D20828800460D61 /* Broadway KB.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Broadway KB.flf"; path = "fonts/Broadway KB.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCB51D20828800460D61 /* Broadway.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Broadway.flf; path = fonts/Broadway.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB61D20828800460D61 /* Bubble.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Bubble.flf; path = fonts/Bubble.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB71D20828800460D61 /* Bulbhead.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Bulbhead.flf; path = fonts/Bulbhead.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB81D20828800460D61 /* Caligraphy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Caligraphy.flf; path = fonts/Caligraphy.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCB91D20828800460D61 /* Caligraphy2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Caligraphy2.flf; path = fonts/Caligraphy2.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCBA1D20828800460D61 /* Calvin S.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Calvin S.flf"; path = "fonts/Calvin S.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCBB1D20828800460D61 /* Cards.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cards.flf; path = fonts/Cards.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCBC1D20828800460D61 /* Catwalk.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Catwalk.flf; path = fonts/Catwalk.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCBD1D20828800460D61 /* Chiseled.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Chiseled.flf; path = fonts/Chiseled.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCBE1D20828800460D61 /* Chunky.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Chunky.flf; path = fonts/Chunky.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCBF1D20828800460D61 /* Coinstak.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Coinstak.flf; path = fonts/Coinstak.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC01D20828800460D61 /* Cola.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cola.flf; path = fonts/Cola.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC11D20828800460D61 /* Colossal.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Colossal.flf; path = fonts/Colossal.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC21D20828800460D61 /* Computer.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Computer.flf; path = fonts/Computer.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC31D20828800460D61 /* Contessa.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Contessa.flf; path = fonts/Contessa.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC41D20828800460D61 /* Contrast.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Contrast.flf; path = fonts/Contrast.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC51D20828800460D61 /* Cosmike.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cosmike.flf; path = fonts/Cosmike.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC61D20828800460D61 /* Crawford.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Crawford.flf; path = fonts/Crawford.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC71D20828800460D61 /* Crawford2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Crawford2.flf; path = fonts/Crawford2.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC81D20828800460D61 /* Crazy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Crazy.flf; path = fonts/Crazy.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCC91D20828800460D61 /* Cricket.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cricket.flf; path = fonts/Cricket.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCCA1D20828800460D61 /* Cursive.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cursive.flf; path = fonts/Cursive.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCCB1D20828800460D61 /* Cyberlarge.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cyberlarge.flf; path = fonts/Cyberlarge.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCCC1D20828800460D61 /* Cybermedium.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cybermedium.flf; path = fonts/Cybermedium.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCCD1D20828800460D61 /* Cybersmall.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cybersmall.flf; path = fonts/Cybersmall.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCCE1D20828800460D61 /* Cygnet.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cygnet.flf; path = fonts/Cygnet.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCCF1D20828800460D61 /* DANC4.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = DANC4.flf; path = fonts/DANC4.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCD01D20828800460D61 /* Dancing Font.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Dancing Font.flf"; path = "fonts/Dancing Font.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCD11D20828800460D61 /* Def Leppard.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Def Leppard.flf"; path = "fonts/Def Leppard.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCD21D20828800460D61 /* Delta Corps Priest 1.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Delta Corps Priest 1.flf"; path = "fonts/Delta Corps Priest 1.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCD31D20828800460D61 /* Diamond.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Diamond.flf; path = fonts/Diamond.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCD41D20828800460D61 /* Diet Cola.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Diet Cola.flf"; path = "fonts/Diet Cola.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCD51D20828800460D61 /* Digital.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Digital.flf; path = fonts/Digital.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCD61D20828800460D61 /* Doh.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Doh.flf; path = fonts/Doh.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCD71D20828800460D61 /* Doom.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Doom.flf; path = fonts/Doom.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCD81D20828800460D61 /* Dot Matrix.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Dot Matrix.flf"; path = "fonts/Dot Matrix.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCD91D20828800460D61 /* Double Shorts.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Double Shorts.flf"; path = "fonts/Double Shorts.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCDA1D20828800460D61 /* Double.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Double.flf; path = fonts/Double.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCDB1D20828800460D61 /* Dr Pepper.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Dr Pepper.flf"; path = "fonts/Dr Pepper.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCDC1D20828800460D61 /* DWhistled.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = DWhistled.flf; path = fonts/DWhistled.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCDD1D20828800460D61 /* Efti Chess.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Efti Chess.flf"; path = "fonts/Efti Chess.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCDE1D20828800460D61 /* Efti Font.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Efti Font.flf"; path = "fonts/Efti Font.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCDF1D20828800460D61 /* Efti Italic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Efti Italic.flf"; path = "fonts/Efti Italic.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCE01D20828800460D61 /* Efti Piti.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Efti Piti.flf"; path = "fonts/Efti Piti.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCE11D20828800460D61 /* Efti Robot.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Efti Robot.flf"; path = "fonts/Efti Robot.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCE21D20828800460D61 /* Efti Wall.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Efti Wall.flf"; path = "fonts/Efti Wall.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCE31D20828800460D61 /* Efti Water.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Efti Water.flf"; path = "fonts/Efti Water.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCE41D20828800460D61 /* Electronic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Electronic.flf; path = fonts/Electronic.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCE51D20828800460D61 /* Elite.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Elite.flf; path = fonts/Elite.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCE61D20828800460D61 /* Epic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Epic.flf; path = fonts/Epic.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCE71D20828800460D61 /* Fender.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fender.flf; path = fonts/Fender.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCE81D20828800460D61 /* Filter.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Filter.flf; path = fonts/Filter.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCE91D20828800460D61 /* Fire Font-k.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Fire Font-k.flf"; path = "fonts/Fire Font-k.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCEA1D20828800460D61 /* Fire Font-s.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Fire Font-s.flf"; path = "fonts/Fire Font-s.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCEB1D20828800460D61 /* Flipped.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Flipped.flf; path = fonts/Flipped.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCEC1D20828800460D61 /* Flower Power.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Flower Power.flf"; path = "fonts/Flower Power.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCED1D20828800460D61 /* Four Tops.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Four Tops.flf"; path = "fonts/Four Tops.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCEE1D20828800460D61 /* Fraktur.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fraktur.flf; path = fonts/Fraktur.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCEF1D20828800460D61 /* Fun Face.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Fun Face.flf"; path = "fonts/Fun Face.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCF01D20828800460D61 /* Fun Faces.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Fun Faces.flf"; path = "fonts/Fun Faces.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCF11D20828800460D61 /* Fuzzy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fuzzy.flf; path = fonts/Fuzzy.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCF21D20828800460D61 /* Georgi16.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Georgi16.flf; path = fonts/Georgi16.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCF31D20828800460D61 /* Georgia11.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Georgia11.flf; path = fonts/Georgia11.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCF41D20828800460D61 /* Ghost.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Ghost.flf; path = fonts/Ghost.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCF51D20828800460D61 /* Ghoulish.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Ghoulish.flf; path = fonts/Ghoulish.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCF61D20828800460D61 /* Glenyn.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Glenyn.flf; path = fonts/Glenyn.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCF71D20828800460D61 /* Goofy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Goofy.flf; path = fonts/Goofy.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCF81D20828900460D61 /* Gothic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gothic.flf; path = fonts/Gothic.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCF91D20828900460D61 /* Graceful.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Graceful.flf; path = fonts/Graceful.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCFA1D20828900460D61 /* Gradient.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gradient.flf; path = fonts/Gradient.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCFB1D20828900460D61 /* Graffiti.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Graffiti.flf; path = fonts/Graffiti.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCFC1D20828900460D61 /* Greek.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Greek.flf; path = fonts/Greek.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DCFD1D20828900460D61 /* Heart Left.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Heart Left.flf"; path = "fonts/Heart Left.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCFE1D20828900460D61 /* Heart Right.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Heart Right.flf"; path = "fonts/Heart Right.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DCFF1D20828900460D61 /* Henry 3D.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Henry 3D.flf"; path = "fonts/Henry 3D.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD001D20828900460D61 /* Hieroglyphs.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Hieroglyphs.flf; path = fonts/Hieroglyphs.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD011D20828900460D61 /* Hollywood.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Hollywood.flf; path = fonts/Hollywood.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD021D20828900460D61 /* Horizontal Left.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Horizontal Left.flf"; path = "fonts/Horizontal Left.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD031D20828900460D61 /* Horizontal Right.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Horizontal Right.flf"; path = "fonts/Horizontal Right.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD041D20828900460D61 /* ICL-1900.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ICL-1900.flf"; path = "fonts/ICL-1900.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD051D20828900460D61 /* Impossible.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Impossible.flf; path = fonts/Impossible.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD061D20828900460D61 /* Invita.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Invita.flf; path = fonts/Invita.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD071D20828900460D61 /* Isometric1.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Isometric1.flf; path = fonts/Isometric1.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD081D20828900460D61 /* Isometric2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Isometric2.flf; path = fonts/Isometric2.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD091D20828900460D61 /* Isometric3.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Isometric3.flf; path = fonts/Isometric3.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD0A1D20828900460D61 /* Isometric4.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Isometric4.flf; path = fonts/Isometric4.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD0B1D20828900460D61 /* Italic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Italic.flf; path = fonts/Italic.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD0C1D20828900460D61 /* Ivrit.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Ivrit.flf; path = fonts/Ivrit.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD0D1D20828900460D61 /* Jacky.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Jacky.flf; path = fonts/Jacky.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD0E1D20828900460D61 /* Jazmine.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Jazmine.flf; path = fonts/Jazmine.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD0F1D20828900460D61 /* Jerusalem.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Jerusalem.flf; path = fonts/Jerusalem.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD101D20828900460D61 /* JS Block Letters.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "JS Block Letters.flf"; path = "fonts/JS Block Letters.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD111D20828900460D61 /* JS Capital Curves.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "JS Capital Curves.flf"; path = "fonts/JS Capital Curves.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD121D20828900460D61 /* JS Stick Letters.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "JS Stick Letters.flf"; path = "fonts/JS Stick Letters.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD131D20828900460D61 /* Katakana.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Katakana.flf; path = fonts/Katakana.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD141D20828900460D61 /* Kban.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Kban.flf; path = fonts/Kban.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD151D20828900460D61 /* Keyboard.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Keyboard.flf; path = fonts/Keyboard.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD161D20828900460D61 /* Knob.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Knob.flf; path = fonts/Knob.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD171D20828900460D61 /* Konto Slant.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Konto Slant.flf"; path = "fonts/Konto Slant.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD181D20828900460D61 /* Konto.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Konto.flf; path = fonts/Konto.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD191D20828900460D61 /* Larry 3D 2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Larry 3D 2.flf"; path = "fonts/Larry 3D 2.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD1A1D20828900460D61 /* Larry 3D.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Larry 3D.flf"; path = "fonts/Larry 3D.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD1B1D20828900460D61 /* LCD.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = LCD.flf; path = fonts/LCD.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD1C1D20828900460D61 /* Lean.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Lean.flf; path = fonts/Lean.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD1D1D20828900460D61 /* Letters.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Letters.flf; path = fonts/Letters.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD1E1D20828900460D61 /* Lil Devil.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Lil Devil.flf"; path = "fonts/Lil Devil.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD1F1D20828900460D61 /* Line Blocks.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Line Blocks.flf"; path = "fonts/Line Blocks.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD201D20828900460D61 /* Linux.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Linux.flf; path = fonts/Linux.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD211D20828900460D61 /* Lockergnome.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Lockergnome.flf; path = fonts/Lockergnome.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD221D20828900460D61 /* Madrid.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Madrid.flf; path = fonts/Madrid.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD231D20828900460D61 /* Marquee.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Marquee.flf; path = fonts/Marquee.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD241D20828900460D61 /* Maxfour.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Maxfour.flf; path = fonts/Maxfour.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD251D20828900460D61 /* Merlin1.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Merlin1.flf; path = fonts/Merlin1.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD261D20828900460D61 /* Merlin2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Merlin2.flf; path = fonts/Merlin2.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD271D20828900460D61 /* Mike.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Mike.flf; path = fonts/Mike.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD281D20828900460D61 /* Mini.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Mini.flf; path = fonts/Mini.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD291D20828900460D61 /* Mirror.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Mirror.flf; path = fonts/Mirror.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD2A1D20828900460D61 /* Mnemonic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Mnemonic.flf; path = fonts/Mnemonic.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD2B1D20828900460D61 /* Modular.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Modular.flf; path = fonts/Modular.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD2C1D20828900460D61 /* Moscow.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Moscow.flf; path = fonts/Moscow.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD2D1D20828900460D61 /* Mshebrew210.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Mshebrew210.flf; path = fonts/Mshebrew210.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD2E1D20828900460D61 /* Muzzle.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Muzzle.flf; path = fonts/Muzzle.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD2F1D20828900460D61 /* Nancyj-Fancy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Nancyj-Fancy.flf"; path = "fonts/Nancyj-Fancy.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD301D20828900460D61 /* Nancyj-Improved.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Nancyj-Improved.flf"; path = "fonts/Nancyj-Improved.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD311D20828900460D61 /* Nancyj-Underlined.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Nancyj-Underlined.flf"; path = "fonts/Nancyj-Underlined.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD321D20828900460D61 /* Nancyj.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Nancyj.flf; path = fonts/Nancyj.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD331D20828900460D61 /* Nipples.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Nipples.flf; path = fonts/Nipples.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD341D20828900460D61 /* NScript.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = NScript.flf; path = fonts/NScript.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD351D20828900460D61 /* NT Greek.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "NT Greek.flf"; path = "fonts/NT Greek.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD361D20828900460D61 /* NV Script.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "NV Script.flf"; path = "fonts/NV Script.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD371D20828900460D61 /* O8.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = O8.flf; path = fonts/O8.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD381D20828900460D61 /* Ogre.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Ogre.flf; path = fonts/Ogre.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD391D20828900460D61 /* Old Banner.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Old Banner.flf"; path = "fonts/Old Banner.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD3A1D20828900460D61 /* OS2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = OS2.flf; path = fonts/OS2.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD3B1D20828900460D61 /* Patorjk-HeX.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Patorjk-HeX.flf"; path = "fonts/Patorjk-HeX.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD3C1D20828900460D61 /* Patorjk's Cheese.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Patorjk's Cheese.flf"; path = "fonts/Patorjk's Cheese.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD3D1D20828900460D61 /* Pawp.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Pawp.flf; path = fonts/Pawp.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD3E1D20828900460D61 /* Peaks Slant.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Peaks Slant.flf"; path = "fonts/Peaks Slant.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD3F1D20828900460D61 /* Peaks.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Peaks.flf; path = fonts/Peaks.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD401D20828900460D61 /* Pebbles.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Pebbles.flf; path = fonts/Pebbles.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD411D20828900460D61 /* Pepper.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Pepper.flf; path = fonts/Pepper.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD421D20828900460D61 /* Poison.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Poison.flf; path = fonts/Poison.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD431D20828900460D61 /* Puffy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Puffy.flf; path = fonts/Puffy.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD441D20828900460D61 /* Puzzle.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Puzzle.flf; path = fonts/Puzzle.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD451D20828900460D61 /* Pyramid.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Pyramid.flf; path = fonts/Pyramid.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD461D20828900460D61 /* Rammstein.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Rammstein.flf; path = fonts/Rammstein.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD471D20828900460D61 /* Rectangles.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Rectangles.flf; path = fonts/Rectangles.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD481D20828900460D61 /* Red Phoenix.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Red Phoenix.flf"; path = "fonts/Red Phoenix.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD491D20828900460D61 /* Relief.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Relief.flf; path = fonts/Relief.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD4A1D20828900460D61 /* Relief2.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Relief2.flf; path = fonts/Relief2.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD4B1D20828900460D61 /* Reverse.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Reverse.flf; path = fonts/Reverse.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD4C1D20828900460D61 /* Roman.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Roman.flf; path = fonts/Roman.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD4D1D20828900460D61 /* Rotated.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Rotated.flf; path = fonts/Rotated.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD4E1D20828900460D61 /* Rounded.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Rounded.flf; path = fonts/Rounded.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD4F1D20828900460D61 /* Rowan Cap.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Rowan Cap.flf"; path = "fonts/Rowan Cap.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD501D20828900460D61 /* Rozzo.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Rozzo.flf; path = fonts/Rozzo.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD511D20828900460D61 /* Runic.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Runic.flf; path = fonts/Runic.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD521D20828900460D61 /* Runyc.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Runyc.flf; path = fonts/Runyc.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD531D20828900460D61 /* S Blood.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "S Blood.flf"; path = "fonts/S Blood.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD541D20828900460D61 /* Santa Clara.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Santa Clara.flf"; path = "fonts/Santa Clara.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD551D20828900460D61 /* Script.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Script.flf; path = fonts/Script.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD561D20828900460D61 /* Serifcap.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Serifcap.flf; path = fonts/Serifcap.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD571D20828900460D61 /* Shadow.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Shadow.flf; path = fonts/Shadow.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD581D20828900460D61 /* Shimrod.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Shimrod.flf; path = fonts/Shimrod.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD591D20828900460D61 /* Short.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Short.flf; path = fonts/Short.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD5A1D20828900460D61 /* SL Script.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "SL Script.flf"; path = "fonts/SL Script.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD5B1D20828900460D61 /* Slant Relief.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Slant Relief.flf"; path = "fonts/Slant Relief.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD5C1D20828900460D61 /* Slant.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Slant.flf; path = fonts/Slant.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD5D1D20828900460D61 /* Slide.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Slide.flf; path = fonts/Slide.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD5E1D20828900460D61 /* Small Caps.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Small Caps.flf"; path = "fonts/Small Caps.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD5F1D20828900460D61 /* Small Isometric1.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Small Isometric1.flf"; path = "fonts/Small Isometric1.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD601D20828900460D61 /* Small Keyboard.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Small Keyboard.flf"; path = "fonts/Small Keyboard.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD611D20828900460D61 /* Small Poison.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Small Poison.flf"; path = "fonts/Small Poison.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD621D20828900460D61 /* Small Script.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Small Script.flf"; path = "fonts/Small Script.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD631D20828900460D61 /* Small Shadow.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Small Shadow.flf"; path = "fonts/Small Shadow.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD641D20828900460D61 /* Small Slant.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Small Slant.flf"; path = "fonts/Small Slant.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD651D20828900460D61 /* Small Tengwar.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Small Tengwar.flf"; path = "fonts/Small Tengwar.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD661D20828900460D61 /* Small.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Small.flf; path = fonts/Small.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD671D20828900460D61 /* Soft.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Soft.flf; path = fonts/Soft.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD681D20828900460D61 /* Speed.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Speed.flf; path = fonts/Speed.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD691D20828900460D61 /* Spliff.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Spliff.flf; path = fonts/Spliff.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD6A1D20828900460D61 /* Stacey.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stacey.flf; path = fonts/Stacey.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD6B1D20828900460D61 /* Stampate.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stampate.flf; path = fonts/Stampate.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD6C1D20828900460D61 /* Stampatello.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stampatello.flf; path = fonts/Stampatello.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD6D1D20828900460D61 /* Standard.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Standard.flf; path = fonts/Standard.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD6E1D20828900460D61 /* Star Strips.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Star Strips.flf"; path = "fonts/Star Strips.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD6F1D20828900460D61 /* Star Wars.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Star Wars.flf"; path = "fonts/Star Wars.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD701D20828900460D61 /* Stellar.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stellar.flf; path = fonts/Stellar.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD711D20828900460D61 /* Stforek.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stforek.flf; path = fonts/Stforek.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD721D20828900460D61 /* Stick Letters.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Stick Letters.flf"; path = "fonts/Stick Letters.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD731D20828900460D61 /* Stop.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Stop.flf; path = fonts/Stop.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD741D20828900460D61 /* Straight.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Straight.flf; path = fonts/Straight.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD751D20828900460D61 /* Stronger Than All.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Stronger Than All.flf"; path = "fonts/Stronger Than All.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD761D20828900460D61 /* Sub-Zero.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Sub-Zero.flf"; path = "fonts/Sub-Zero.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD771D20828900460D61 /* Swamp Land.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Swamp Land.flf"; path = "fonts/Swamp Land.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD781D20828900460D61 /* Swan.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Swan.flf; path = fonts/Swan.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD791D20828900460D61 /* Sweet.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Sweet.flf; path = fonts/Sweet.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD7A1D20828900460D61 /* Tanja.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Tanja.flf; path = fonts/Tanja.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD7B1D20828900460D61 /* Tengwar.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Tengwar.flf; path = fonts/Tengwar.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD7C1D20828900460D61 /* Test1.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Test1.flf; path = fonts/Test1.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD7D1D20828900460D61 /* The Edge.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "The Edge.flf"; path = "fonts/The Edge.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD7E1D20828900460D61 /* Thick.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Thick.flf; path = fonts/Thick.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD7F1D20828900460D61 /* Thin.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Thin.flf; path = fonts/Thin.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD801D20828900460D61 /* THIS.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = THIS.flf; path = fonts/THIS.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD811D20828900460D61 /* Thorned.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Thorned.flf; path = fonts/Thorned.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD821D20828900460D61 /* Three Point.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Three Point.flf"; path = "fonts/Three Point.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD831D20828900460D61 /* Ticks Slant.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Ticks Slant.flf"; path = "fonts/Ticks Slant.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD841D20828900460D61 /* Ticks.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Ticks.flf; path = fonts/Ticks.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD851D20828900460D61 /* Tiles.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Tiles.flf; path = fonts/Tiles.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD861D20828900460D61 /* Tinker-Toy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Tinker-Toy.flf"; path = "fonts/Tinker-Toy.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD871D20828900460D61 /* Tombstone.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Tombstone.flf; path = fonts/Tombstone.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD881D20828900460D61 /* Train.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Train.flf; path = fonts/Train.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD891D20828900460D61 /* Trek.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Trek.flf; path = fonts/Trek.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD8A1D20828900460D61 /* Tsalagi.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Tsalagi.flf; path = fonts/Tsalagi.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD8B1D20828900460D61 /* Tubular.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Tubular.flf; path = fonts/Tubular.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD8C1D20828900460D61 /* Twisted.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Twisted.flf; path = fonts/Twisted.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD8D1D20828900460D61 /* Two Point.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Two Point.flf"; path = "fonts/Two Point.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD8E1D20828900460D61 /* Univers.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Univers.flf; path = fonts/Univers.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD8F1D20828900460D61 /* USA Flag.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "USA Flag.flf"; path = "fonts/USA Flag.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD901D20828900460D61 /* Varsity.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Varsity.flf; path = fonts/Varsity.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD911D20828900460D61 /* Wavy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Wavy.flf; path = fonts/Wavy.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD921D20828900460D61 /* Weird.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Weird.flf; path = fonts/Weird.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD931D20828900460D61 /* Wet Letter.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Wet Letter.flf"; path = "fonts/Wet Letter.flf"; sourceTree = SOURCE_ROOT; };
+		D7D0DD941D20828900460D61 /* Whimsy.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Whimsy.flf; path = fonts/Whimsy.flf; sourceTree = SOURCE_ROOT; };
+		D7D0DD951D20828900460D61 /* Wow.flf */ = {isa = PBXFileReference; lastKnownFileType = text; name = Wow.flf; path = fonts/Wow.flf; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D703180D1D1CF4550023F596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70318211D1CF4670023F596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70318271D1CF4670023F596 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D70318071D1CF4550023F596 = {
+			isa = PBXGroup;
+			children = (
+				D70318121D1CF4550023F596 /* SETools */,
+				D70318281D1CF4680023F596 /* Figlet */,
+				D70318251D1CF4670023F596 /* Frameworks */,
+				D70318111D1CF4550023F596 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D70318111D1CF4550023F596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D70318101D1CF4550023F596 /* SETools.app */,
+				D70318241D1CF4670023F596 /* Figlet.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D70318121D1CF4550023F596 /* SETools */ = {
+			isa = PBXGroup;
+			children = (
+				D70318131D1CF4550023F596 /* AppDelegate.swift */,
+				D70318151D1CF4550023F596 /* Assets.xcassets */,
+				D70318171D1CF4550023F596 /* MainMenu.xib */,
+				D703181A1D1CF4550023F596 /* Info.plist */,
+			);
+			path = SETools;
+			sourceTree = "<group>";
+		};
+		D70318251D1CF4670023F596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D70318261D1CF4670023F596 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D70318281D1CF4680023F596 /* Figlet */ = {
+			isa = PBXGroup;
+			children = (
+				D7D0DC821D20826A00460D61 /* Fonts */,
+				D7D0DC7B1D207DF400460D61 /* Extensions.swift */,
+				D774B2EC1D211CA9009A62E4 /* XFigfont.swift */,
+				D7A75E2E1D216DD40006B8F8 /* XHelp.swift */,
+				D7A75E321D216F420006B8F8 /* XHelpmenu.txt */,
+				D7D0DC7C1D207DF400460D61 /* Figlet.swift */,
+				D7D0DC7D1D207DF400460D61 /* FigletHeader.swift */,
+				D703182B1D1CF4680023F596 /* SourceEditorExtension.swift */,
+				D703182D1D1CF4680023F596 /* SourceEditorCommand.swift */,
+				D703182F1D1CF4680023F596 /* Info.plist */,
+				D70318291D1CF4680023F596 /* Supporting Files */,
+			);
+			path = Figlet;
+			sourceTree = "<group>";
+		};
+		D70318291D1CF4680023F596 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D703182A1D1CF4680023F596 /* Figlet.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7D0DC821D20826A00460D61 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D7D0DC831D20828800460D61 /* 1Row.flf */,
+				D7D0DC841D20828800460D61 /* 3-D.flf */,
+				D7D0DC851D20828800460D61 /* 3D Diagonal.flf */,
+				D7D0DC861D20828800460D61 /* 3D-ASCII.flf */,
+				D7D0DC871D20828800460D61 /* 3x5.flf */,
+				D7D0DC881D20828800460D61 /* 4Max.flf */,
+				D7D0DC891D20828800460D61 /* 5 Line Oblique.flf */,
+				D7D0DC8A1D20828800460D61 /* Acrobatic.flf */,
+				D7D0DC8B1D20828800460D61 /* Alligator.flf */,
+				D7D0DC8C1D20828800460D61 /* Alligator2.flf */,
+				D7D0DC8D1D20828800460D61 /* Alpha.flf */,
+				D7D0DC8E1D20828800460D61 /* Alphabet.flf */,
+				D7D0DC8F1D20828800460D61 /* AMC 3 Line.flf */,
+				D7D0DC901D20828800460D61 /* AMC 3 Liv1.flf */,
+				D7D0DC911D20828800460D61 /* AMC AAA01.flf */,
+				D7D0DC921D20828800460D61 /* AMC Neko.flf */,
+				D7D0DC931D20828800460D61 /* AMC Razor.flf */,
+				D7D0DC941D20828800460D61 /* AMC Razor2.flf */,
+				D7D0DC951D20828800460D61 /* AMC Slash.flf */,
+				D7D0DC961D20828800460D61 /* AMC Slider.flf */,
+				D7D0DC971D20828800460D61 /* AMC Thin.flf */,
+				D7D0DC981D20828800460D61 /* AMC Tubes.flf */,
+				D7D0DC991D20828800460D61 /* AMC Untitled.flf */,
+				D7D0DC9A1D20828800460D61 /* ANSI Shadow.flf */,
+				D7D0DC9B1D20828800460D61 /* Arrows.flf */,
+				D7D0DC9C1D20828800460D61 /* ASCII New Roman.flf */,
+				D7D0DC9D1D20828800460D61 /* Avatar.flf */,
+				D7D0DC9E1D20828800460D61 /* Banner.flf */,
+				D7D0DC9F1D20828800460D61 /* Banner3-D.flf */,
+				D7D0DCA01D20828800460D61 /* Banner3.flf */,
+				D7D0DCA11D20828800460D61 /* Banner4.flf */,
+				D7D0DCA21D20828800460D61 /* Barbwire.flf */,
+				D7D0DCA31D20828800460D61 /* Basic.flf */,
+				D7D0DCA41D20828800460D61 /* Bear.flf */,
+				D7D0DCA51D20828800460D61 /* Bell.flf */,
+				D7D0DCA61D20828800460D61 /* Benjamin.flf */,
+				D7D0DCA71D20828800460D61 /* Big Chief.flf */,
+				D7D0DCA81D20828800460D61 /* Big Money-ne.flf */,
+				D7D0DCA91D20828800460D61 /* Big Money-nw.flf */,
+				D7D0DCAA1D20828800460D61 /* Big Money-se.flf */,
+				D7D0DCAB1D20828800460D61 /* Big Money-sw.flf */,
+				D7D0DCAC1D20828800460D61 /* Big.flf */,
+				D7D0DCAD1D20828800460D61 /* Bigfig.flf */,
+				D7D0DCAE1D20828800460D61 /* Block.flf */,
+				D7D0DCAF1D20828800460D61 /* Blocks.flf */,
+				D7D0DCB01D20828800460D61 /* Bloody.flf */,
+				D7D0DCB11D20828800460D61 /* Bolger.flf */,
+				D7D0DCB21D20828800460D61 /* Braced.flf */,
+				D7D0DCB31D20828800460D61 /* Bright.flf */,
+				D7D0DCB41D20828800460D61 /* Broadway KB.flf */,
+				D7D0DCB51D20828800460D61 /* Broadway.flf */,
+				D7D0DCB61D20828800460D61 /* Bubble.flf */,
+				D7D0DCB71D20828800460D61 /* Bulbhead.flf */,
+				D7D0DCB81D20828800460D61 /* Caligraphy.flf */,
+				D7D0DCB91D20828800460D61 /* Caligraphy2.flf */,
+				D7D0DCBA1D20828800460D61 /* Calvin S.flf */,
+				D7D0DCBB1D20828800460D61 /* Cards.flf */,
+				D7D0DCBC1D20828800460D61 /* Catwalk.flf */,
+				D7D0DCBD1D20828800460D61 /* Chiseled.flf */,
+				D7D0DCBE1D20828800460D61 /* Chunky.flf */,
+				D7D0DCBF1D20828800460D61 /* Coinstak.flf */,
+				D7D0DCC01D20828800460D61 /* Cola.flf */,
+				D7D0DCC11D20828800460D61 /* Colossal.flf */,
+				D7D0DCC21D20828800460D61 /* Computer.flf */,
+				D7D0DCC31D20828800460D61 /* Contessa.flf */,
+				D7D0DCC41D20828800460D61 /* Contrast.flf */,
+				D7D0DCC51D20828800460D61 /* Cosmike.flf */,
+				D7D0DCC61D20828800460D61 /* Crawford.flf */,
+				D7D0DCC71D20828800460D61 /* Crawford2.flf */,
+				D7D0DCC81D20828800460D61 /* Crazy.flf */,
+				D7D0DCC91D20828800460D61 /* Cricket.flf */,
+				D7D0DCCA1D20828800460D61 /* Cursive.flf */,
+				D7D0DCCB1D20828800460D61 /* Cyberlarge.flf */,
+				D7D0DCCC1D20828800460D61 /* Cybermedium.flf */,
+				D7D0DCCD1D20828800460D61 /* Cybersmall.flf */,
+				D7D0DCCE1D20828800460D61 /* Cygnet.flf */,
+				D7D0DCCF1D20828800460D61 /* DANC4.flf */,
+				D7D0DCD01D20828800460D61 /* Dancing Font.flf */,
+				D7D0DCD11D20828800460D61 /* Def Leppard.flf */,
+				D7D0DCD21D20828800460D61 /* Delta Corps Priest 1.flf */,
+				D7D0DCD31D20828800460D61 /* Diamond.flf */,
+				D7D0DCD41D20828800460D61 /* Diet Cola.flf */,
+				D7D0DCD51D20828800460D61 /* Digital.flf */,
+				D7D0DCD61D20828800460D61 /* Doh.flf */,
+				D7D0DCD71D20828800460D61 /* Doom.flf */,
+				D7D0DCD81D20828800460D61 /* Dot Matrix.flf */,
+				D7D0DCD91D20828800460D61 /* Double Shorts.flf */,
+				D7D0DCDA1D20828800460D61 /* Double.flf */,
+				D7D0DCDB1D20828800460D61 /* Dr Pepper.flf */,
+				D7D0DCDC1D20828800460D61 /* DWhistled.flf */,
+				D7D0DCDD1D20828800460D61 /* Efti Chess.flf */,
+				D7D0DCDE1D20828800460D61 /* Efti Font.flf */,
+				D7D0DCDF1D20828800460D61 /* Efti Italic.flf */,
+				D7D0DCE01D20828800460D61 /* Efti Piti.flf */,
+				D7D0DCE11D20828800460D61 /* Efti Robot.flf */,
+				D7D0DCE21D20828800460D61 /* Efti Wall.flf */,
+				D7D0DCE31D20828800460D61 /* Efti Water.flf */,
+				D7D0DCE41D20828800460D61 /* Electronic.flf */,
+				D7D0DCE51D20828800460D61 /* Elite.flf */,
+				D7D0DCE61D20828800460D61 /* Epic.flf */,
+				D7D0DCE71D20828800460D61 /* Fender.flf */,
+				D7D0DCE81D20828800460D61 /* Filter.flf */,
+				D7D0DCE91D20828800460D61 /* Fire Font-k.flf */,
+				D7D0DCEA1D20828800460D61 /* Fire Font-s.flf */,
+				D7D0DCEB1D20828800460D61 /* Flipped.flf */,
+				D7D0DCEC1D20828800460D61 /* Flower Power.flf */,
+				D7D0DCED1D20828800460D61 /* Four Tops.flf */,
+				D7D0DCEE1D20828800460D61 /* Fraktur.flf */,
+				D7D0DCEF1D20828800460D61 /* Fun Face.flf */,
+				D7D0DCF01D20828800460D61 /* Fun Faces.flf */,
+				D7D0DCF11D20828800460D61 /* Fuzzy.flf */,
+				D7D0DCF21D20828800460D61 /* Georgi16.flf */,
+				D7D0DCF31D20828800460D61 /* Georgia11.flf */,
+				D7D0DCF41D20828800460D61 /* Ghost.flf */,
+				D7D0DCF51D20828800460D61 /* Ghoulish.flf */,
+				D7D0DCF61D20828800460D61 /* Glenyn.flf */,
+				D7D0DCF71D20828800460D61 /* Goofy.flf */,
+				D7D0DCF81D20828900460D61 /* Gothic.flf */,
+				D7D0DCF91D20828900460D61 /* Graceful.flf */,
+				D7D0DCFA1D20828900460D61 /* Gradient.flf */,
+				D7D0DCFB1D20828900460D61 /* Graffiti.flf */,
+				D7D0DCFC1D20828900460D61 /* Greek.flf */,
+				D7D0DCFD1D20828900460D61 /* Heart Left.flf */,
+				D7D0DCFE1D20828900460D61 /* Heart Right.flf */,
+				D7D0DCFF1D20828900460D61 /* Henry 3D.flf */,
+				D7D0DD001D20828900460D61 /* Hieroglyphs.flf */,
+				D7D0DD011D20828900460D61 /* Hollywood.flf */,
+				D7D0DD021D20828900460D61 /* Horizontal Left.flf */,
+				D7D0DD031D20828900460D61 /* Horizontal Right.flf */,
+				D7D0DD041D20828900460D61 /* ICL-1900.flf */,
+				D7D0DD051D20828900460D61 /* Impossible.flf */,
+				D7D0DD061D20828900460D61 /* Invita.flf */,
+				D7D0DD071D20828900460D61 /* Isometric1.flf */,
+				D7D0DD081D20828900460D61 /* Isometric2.flf */,
+				D7D0DD091D20828900460D61 /* Isometric3.flf */,
+				D7D0DD0A1D20828900460D61 /* Isometric4.flf */,
+				D7D0DD0B1D20828900460D61 /* Italic.flf */,
+				D7D0DD0C1D20828900460D61 /* Ivrit.flf */,
+				D7D0DD0D1D20828900460D61 /* Jacky.flf */,
+				D7D0DD0E1D20828900460D61 /* Jazmine.flf */,
+				D7D0DD0F1D20828900460D61 /* Jerusalem.flf */,
+				D7D0DD101D20828900460D61 /* JS Block Letters.flf */,
+				D7D0DD111D20828900460D61 /* JS Capital Curves.flf */,
+				D7D0DD121D20828900460D61 /* JS Stick Letters.flf */,
+				D7D0DD131D20828900460D61 /* Katakana.flf */,
+				D7D0DD141D20828900460D61 /* Kban.flf */,
+				D7D0DD151D20828900460D61 /* Keyboard.flf */,
+				D7D0DD161D20828900460D61 /* Knob.flf */,
+				D7D0DD171D20828900460D61 /* Konto Slant.flf */,
+				D7D0DD181D20828900460D61 /* Konto.flf */,
+				D7D0DD191D20828900460D61 /* Larry 3D 2.flf */,
+				D7D0DD1A1D20828900460D61 /* Larry 3D.flf */,
+				D7D0DD1B1D20828900460D61 /* LCD.flf */,
+				D7D0DD1C1D20828900460D61 /* Lean.flf */,
+				D7D0DD1D1D20828900460D61 /* Letters.flf */,
+				D7D0DD1E1D20828900460D61 /* Lil Devil.flf */,
+				D7D0DD1F1D20828900460D61 /* Line Blocks.flf */,
+				D7D0DD201D20828900460D61 /* Linux.flf */,
+				D7D0DD211D20828900460D61 /* Lockergnome.flf */,
+				D7D0DD221D20828900460D61 /* Madrid.flf */,
+				D7D0DD231D20828900460D61 /* Marquee.flf */,
+				D7D0DD241D20828900460D61 /* Maxfour.flf */,
+				D7D0DD251D20828900460D61 /* Merlin1.flf */,
+				D7D0DD261D20828900460D61 /* Merlin2.flf */,
+				D7D0DD271D20828900460D61 /* Mike.flf */,
+				D7D0DD281D20828900460D61 /* Mini.flf */,
+				D7D0DD291D20828900460D61 /* Mirror.flf */,
+				D7D0DD2A1D20828900460D61 /* Mnemonic.flf */,
+				D7D0DD2B1D20828900460D61 /* Modular.flf */,
+				D7D0DD2C1D20828900460D61 /* Moscow.flf */,
+				D7D0DD2D1D20828900460D61 /* Mshebrew210.flf */,
+				D7D0DD2E1D20828900460D61 /* Muzzle.flf */,
+				D7D0DD2F1D20828900460D61 /* Nancyj-Fancy.flf */,
+				D7D0DD301D20828900460D61 /* Nancyj-Improved.flf */,
+				D7D0DD311D20828900460D61 /* Nancyj-Underlined.flf */,
+				D7D0DD321D20828900460D61 /* Nancyj.flf */,
+				D7D0DD331D20828900460D61 /* Nipples.flf */,
+				D7D0DD341D20828900460D61 /* NScript.flf */,
+				D7D0DD351D20828900460D61 /* NT Greek.flf */,
+				D7D0DD361D20828900460D61 /* NV Script.flf */,
+				D7D0DD371D20828900460D61 /* O8.flf */,
+				D7D0DD381D20828900460D61 /* Ogre.flf */,
+				D7D0DD391D20828900460D61 /* Old Banner.flf */,
+				D7D0DD3A1D20828900460D61 /* OS2.flf */,
+				D7D0DD3B1D20828900460D61 /* Patorjk-HeX.flf */,
+				D7D0DD3C1D20828900460D61 /* Patorjk's Cheese.flf */,
+				D7D0DD3D1D20828900460D61 /* Pawp.flf */,
+				D7D0DD3E1D20828900460D61 /* Peaks Slant.flf */,
+				D7D0DD3F1D20828900460D61 /* Peaks.flf */,
+				D7D0DD401D20828900460D61 /* Pebbles.flf */,
+				D7D0DD411D20828900460D61 /* Pepper.flf */,
+				D7D0DD421D20828900460D61 /* Poison.flf */,
+				D7D0DD431D20828900460D61 /* Puffy.flf */,
+				D7D0DD441D20828900460D61 /* Puzzle.flf */,
+				D7D0DD451D20828900460D61 /* Pyramid.flf */,
+				D7D0DD461D20828900460D61 /* Rammstein.flf */,
+				D7D0DD471D20828900460D61 /* Rectangles.flf */,
+				D7D0DD481D20828900460D61 /* Red Phoenix.flf */,
+				D7D0DD491D20828900460D61 /* Relief.flf */,
+				D7D0DD4A1D20828900460D61 /* Relief2.flf */,
+				D7D0DD4B1D20828900460D61 /* Reverse.flf */,
+				D7D0DD4C1D20828900460D61 /* Roman.flf */,
+				D7D0DD4D1D20828900460D61 /* Rotated.flf */,
+				D7D0DD4E1D20828900460D61 /* Rounded.flf */,
+				D7D0DD4F1D20828900460D61 /* Rowan Cap.flf */,
+				D7D0DD501D20828900460D61 /* Rozzo.flf */,
+				D7D0DD511D20828900460D61 /* Runic.flf */,
+				D7D0DD521D20828900460D61 /* Runyc.flf */,
+				D7D0DD531D20828900460D61 /* S Blood.flf */,
+				D7D0DD541D20828900460D61 /* Santa Clara.flf */,
+				D7D0DD551D20828900460D61 /* Script.flf */,
+				D7D0DD561D20828900460D61 /* Serifcap.flf */,
+				D7D0DD571D20828900460D61 /* Shadow.flf */,
+				D7D0DD581D20828900460D61 /* Shimrod.flf */,
+				D7D0DD591D20828900460D61 /* Short.flf */,
+				D7D0DD5A1D20828900460D61 /* SL Script.flf */,
+				D7D0DD5B1D20828900460D61 /* Slant Relief.flf */,
+				D7D0DD5C1D20828900460D61 /* Slant.flf */,
+				D7D0DD5D1D20828900460D61 /* Slide.flf */,
+				D7D0DD5E1D20828900460D61 /* Small Caps.flf */,
+				D7D0DD5F1D20828900460D61 /* Small Isometric1.flf */,
+				D7D0DD601D20828900460D61 /* Small Keyboard.flf */,
+				D7D0DD611D20828900460D61 /* Small Poison.flf */,
+				D7D0DD621D20828900460D61 /* Small Script.flf */,
+				D7D0DD631D20828900460D61 /* Small Shadow.flf */,
+				D7D0DD641D20828900460D61 /* Small Slant.flf */,
+				D7D0DD651D20828900460D61 /* Small Tengwar.flf */,
+				D7D0DD661D20828900460D61 /* Small.flf */,
+				D7D0DD671D20828900460D61 /* Soft.flf */,
+				D7D0DD681D20828900460D61 /* Speed.flf */,
+				D7D0DD691D20828900460D61 /* Spliff.flf */,
+				D7D0DD6A1D20828900460D61 /* Stacey.flf */,
+				D7D0DD6B1D20828900460D61 /* Stampate.flf */,
+				D7D0DD6C1D20828900460D61 /* Stampatello.flf */,
+				D7D0DD6D1D20828900460D61 /* Standard.flf */,
+				D7D0DD6E1D20828900460D61 /* Star Strips.flf */,
+				D7D0DD6F1D20828900460D61 /* Star Wars.flf */,
+				D7D0DD701D20828900460D61 /* Stellar.flf */,
+				D7D0DD711D20828900460D61 /* Stforek.flf */,
+				D7D0DD721D20828900460D61 /* Stick Letters.flf */,
+				D7D0DD731D20828900460D61 /* Stop.flf */,
+				D7D0DD741D20828900460D61 /* Straight.flf */,
+				D7D0DD751D20828900460D61 /* Stronger Than All.flf */,
+				D7D0DD761D20828900460D61 /* Sub-Zero.flf */,
+				D7D0DD771D20828900460D61 /* Swamp Land.flf */,
+				D7D0DD781D20828900460D61 /* Swan.flf */,
+				D7D0DD791D20828900460D61 /* Sweet.flf */,
+				D7D0DD7A1D20828900460D61 /* Tanja.flf */,
+				D7D0DD7B1D20828900460D61 /* Tengwar.flf */,
+				D7D0DD7C1D20828900460D61 /* Test1.flf */,
+				D7D0DD7D1D20828900460D61 /* The Edge.flf */,
+				D7D0DD7E1D20828900460D61 /* Thick.flf */,
+				D7D0DD7F1D20828900460D61 /* Thin.flf */,
+				D7D0DD801D20828900460D61 /* THIS.flf */,
+				D7D0DD811D20828900460D61 /* Thorned.flf */,
+				D7D0DD821D20828900460D61 /* Three Point.flf */,
+				D7D0DD831D20828900460D61 /* Ticks Slant.flf */,
+				D7D0DD841D20828900460D61 /* Ticks.flf */,
+				D7D0DD851D20828900460D61 /* Tiles.flf */,
+				D7D0DD861D20828900460D61 /* Tinker-Toy.flf */,
+				D7D0DD871D20828900460D61 /* Tombstone.flf */,
+				D7D0DD881D20828900460D61 /* Train.flf */,
+				D7D0DD891D20828900460D61 /* Trek.flf */,
+				D7D0DD8A1D20828900460D61 /* Tsalagi.flf */,
+				D7D0DD8B1D20828900460D61 /* Tubular.flf */,
+				D7D0DD8C1D20828900460D61 /* Twisted.flf */,
+				D7D0DD8D1D20828900460D61 /* Two Point.flf */,
+				D7D0DD8E1D20828900460D61 /* Univers.flf */,
+				D7D0DD8F1D20828900460D61 /* USA Flag.flf */,
+				D7D0DD901D20828900460D61 /* Varsity.flf */,
+				D7D0DD911D20828900460D61 /* Wavy.flf */,
+				D7D0DD921D20828900460D61 /* Weird.flf */,
+				D7D0DD931D20828900460D61 /* Wet Letter.flf */,
+				D7D0DD941D20828900460D61 /* Whimsy.flf */,
+				D7D0DD951D20828900460D61 /* Wow.flf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D703180F1D1CF4550023F596 /* SETools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D703181D1D1CF4550023F596 /* Build configuration list for PBXNativeTarget "SETools" */;
+			buildPhases = (
+				D703180C1D1CF4550023F596 /* Sources */,
+				D703180D1D1CF4550023F596 /* Frameworks */,
+				D703180E1D1CF4550023F596 /* Resources */,
+				D70318361D1CF4680023F596 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D70318311D1CF4680023F596 /* PBXTargetDependency */,
+			);
+			name = SETools;
+			productName = SETools;
+			productReference = D70318101D1CF4550023F596 /* SETools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D70318231D1CF4670023F596 /* Figlet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D70318331D1CF4680023F596 /* Build configuration list for PBXNativeTarget "Figlet" */;
+			buildPhases = (
+				D70318201D1CF4670023F596 /* Sources */,
+				D70318211D1CF4670023F596 /* Frameworks */,
+				D70318221D1CF4670023F596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Figlet;
+			productName = Figlet;
+			productReference = D70318241D1CF4670023F596 /* Figlet.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D70318081D1CF4550023F596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = africanswift;
+				TargetAttributes = {
+					D703180F1D1CF4550023F596 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B566Q8V9X6;
+						DevelopmentTeamName = "Vaughn Williams (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					D70318231D1CF4670023F596 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B566Q8V9X6;
+						DevelopmentTeamName = "Vaughn Williams (Personal Team)";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D703180B1D1CF4550023F596 /* Build configuration list for PBXProject "SETools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D70318071D1CF4550023F596;
+			productRefGroup = D70318111D1CF4550023F596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D703180F1D1CF4550023F596 /* SETools */,
+				D70318231D1CF4670023F596 /* Figlet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D703180E1D1CF4550023F596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70318161D1CF4550023F596 /* Assets.xcassets in Resources */,
+				D70318191D1CF4550023F596 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70318221D1CF4670023F596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78F18161D208AF700E34331 /* 1Row.flf in Resources */,
+				D7A75E331D216F420006B8F8 /* XHelpmenu.txt in Resources */,
+				D78F18171D208AF700E34331 /* 3-D.flf in Resources */,
+				D78F18181D208AF700E34331 /* 3D Diagonal.flf in Resources */,
+				D78F18191D208AF700E34331 /* 3D-ASCII.flf in Resources */,
+				D78F181A1D208AF700E34331 /* 3x5.flf in Resources */,
+				D78F181B1D208AF700E34331 /* 4Max.flf in Resources */,
+				D78F181C1D208AF700E34331 /* 5 Line Oblique.flf in Resources */,
+				D78F181D1D208AF700E34331 /* Acrobatic.flf in Resources */,
+				D78F181E1D208AF700E34331 /* Alligator.flf in Resources */,
+				D78F181F1D208AF700E34331 /* Alligator2.flf in Resources */,
+				D78F18201D208AF700E34331 /* Alpha.flf in Resources */,
+				D78F18211D208AF700E34331 /* Alphabet.flf in Resources */,
+				D78F18221D208AF700E34331 /* AMC 3 Line.flf in Resources */,
+				D78F18231D208AF700E34331 /* AMC 3 Liv1.flf in Resources */,
+				D78F18241D208AF700E34331 /* AMC AAA01.flf in Resources */,
+				D78F18251D208AF700E34331 /* AMC Neko.flf in Resources */,
+				D78F18261D208AF700E34331 /* AMC Razor.flf in Resources */,
+				D78F18271D208AF700E34331 /* AMC Razor2.flf in Resources */,
+				D78F18281D208AF700E34331 /* AMC Slash.flf in Resources */,
+				D78F18291D208AF700E34331 /* AMC Slider.flf in Resources */,
+				D78F182A1D208AF700E34331 /* AMC Thin.flf in Resources */,
+				D78F182B1D208AF700E34331 /* AMC Tubes.flf in Resources */,
+				D78F182C1D208AF700E34331 /* AMC Untitled.flf in Resources */,
+				D78F182D1D208AF700E34331 /* ANSI Shadow.flf in Resources */,
+				D78F182E1D208AF700E34331 /* Arrows.flf in Resources */,
+				D78F182F1D208AF700E34331 /* ASCII New Roman.flf in Resources */,
+				D78F18301D208AF700E34331 /* Avatar.flf in Resources */,
+				D78F18311D208AF700E34331 /* Banner.flf in Resources */,
+				D78F18321D208AF700E34331 /* Banner3-D.flf in Resources */,
+				D78F18331D208AF700E34331 /* Banner3.flf in Resources */,
+				D78F18341D208AF700E34331 /* Banner4.flf in Resources */,
+				D78F18351D208AF700E34331 /* Barbwire.flf in Resources */,
+				D78F18361D208AF700E34331 /* Basic.flf in Resources */,
+				D78F18371D208AF700E34331 /* Bear.flf in Resources */,
+				D78F18381D208AF700E34331 /* Bell.flf in Resources */,
+				D78F18391D208AF700E34331 /* Benjamin.flf in Resources */,
+				D78F183A1D208AF700E34331 /* Big Chief.flf in Resources */,
+				D78F183B1D208AF700E34331 /* Big Money-ne.flf in Resources */,
+				D78F183C1D208AF700E34331 /* Big Money-nw.flf in Resources */,
+				D78F183D1D208AF700E34331 /* Big Money-se.flf in Resources */,
+				D78F183E1D208AF700E34331 /* Big Money-sw.flf in Resources */,
+				D78F183F1D208AF700E34331 /* Big.flf in Resources */,
+				D78F18401D208AF700E34331 /* Bigfig.flf in Resources */,
+				D78F18411D208AF700E34331 /* Block.flf in Resources */,
+				D78F18421D208AF700E34331 /* Blocks.flf in Resources */,
+				D78F18431D208AF700E34331 /* Bloody.flf in Resources */,
+				D78F18441D208AF700E34331 /* Bolger.flf in Resources */,
+				D78F18451D208AF700E34331 /* Braced.flf in Resources */,
+				D78F18461D208AF700E34331 /* Bright.flf in Resources */,
+				D78F18471D208AF700E34331 /* Broadway KB.flf in Resources */,
+				D78F18481D208AF700E34331 /* Broadway.flf in Resources */,
+				D78F18491D208AF700E34331 /* Bubble.flf in Resources */,
+				D78F184A1D208AF700E34331 /* Bulbhead.flf in Resources */,
+				D78F184B1D208AF700E34331 /* Caligraphy.flf in Resources */,
+				D78F184C1D208AF700E34331 /* Caligraphy2.flf in Resources */,
+				D78F184D1D208AF700E34331 /* Calvin S.flf in Resources */,
+				D78F184E1D208AF700E34331 /* Cards.flf in Resources */,
+				D78F184F1D208AF700E34331 /* Catwalk.flf in Resources */,
+				D78F18501D208AF700E34331 /* Chiseled.flf in Resources */,
+				D78F18511D208AF700E34331 /* Chunky.flf in Resources */,
+				D78F18521D208AF700E34331 /* Coinstak.flf in Resources */,
+				D78F18531D208AF700E34331 /* Cola.flf in Resources */,
+				D78F18541D208AF700E34331 /* Colossal.flf in Resources */,
+				D78F18551D208AF700E34331 /* Computer.flf in Resources */,
+				D78F18561D208AF700E34331 /* Contessa.flf in Resources */,
+				D78F18571D208AF700E34331 /* Contrast.flf in Resources */,
+				D78F18581D208AF700E34331 /* Cosmike.flf in Resources */,
+				D78F18591D208AF700E34331 /* Crawford.flf in Resources */,
+				D78F185A1D208AF700E34331 /* Crawford2.flf in Resources */,
+				D78F185B1D208AF700E34331 /* Crazy.flf in Resources */,
+				D78F185C1D208AF700E34331 /* Cricket.flf in Resources */,
+				D78F185D1D208AF700E34331 /* Cursive.flf in Resources */,
+				D78F185E1D208AF700E34331 /* Cyberlarge.flf in Resources */,
+				D78F185F1D208AF700E34331 /* Cybermedium.flf in Resources */,
+				D78F18601D208AF700E34331 /* Cybersmall.flf in Resources */,
+				D78F18611D208AF700E34331 /* Cygnet.flf in Resources */,
+				D78F18621D208AF700E34331 /* DANC4.flf in Resources */,
+				D78F18631D208AF700E34331 /* Dancing Font.flf in Resources */,
+				D78F18641D208AF700E34331 /* Def Leppard.flf in Resources */,
+				D78F18651D208AF700E34331 /* Delta Corps Priest 1.flf in Resources */,
+				D78F18661D208AF700E34331 /* Diamond.flf in Resources */,
+				D78F18671D208AF700E34331 /* Diet Cola.flf in Resources */,
+				D78F18681D208AF700E34331 /* Digital.flf in Resources */,
+				D78F18691D208AF700E34331 /* Doh.flf in Resources */,
+				D78F186A1D208AF700E34331 /* Doom.flf in Resources */,
+				D78F186B1D208AF700E34331 /* Dot Matrix.flf in Resources */,
+				D78F186C1D208AF700E34331 /* Double Shorts.flf in Resources */,
+				D78F186D1D208AF700E34331 /* Double.flf in Resources */,
+				D78F186E1D208AF700E34331 /* Dr Pepper.flf in Resources */,
+				D78F186F1D208AF700E34331 /* DWhistled.flf in Resources */,
+				D78F18701D208AF700E34331 /* Efti Chess.flf in Resources */,
+				D78F18711D208AF700E34331 /* Efti Font.flf in Resources */,
+				D78F18721D208AF700E34331 /* Efti Italic.flf in Resources */,
+				D78F18731D208AF700E34331 /* Efti Piti.flf in Resources */,
+				D78F18741D208AF700E34331 /* Efti Robot.flf in Resources */,
+				D78F18751D208AF700E34331 /* Efti Wall.flf in Resources */,
+				D78F18761D208AF700E34331 /* Efti Water.flf in Resources */,
+				D78F18771D208AF700E34331 /* Electronic.flf in Resources */,
+				D78F18781D208AF700E34331 /* Elite.flf in Resources */,
+				D78F18791D208AF700E34331 /* Epic.flf in Resources */,
+				D78F187A1D208AF700E34331 /* Fender.flf in Resources */,
+				D78F187B1D208AF700E34331 /* Filter.flf in Resources */,
+				D78F187C1D208AF700E34331 /* Fire Font-k.flf in Resources */,
+				D78F187D1D208AF700E34331 /* Fire Font-s.flf in Resources */,
+				D78F187E1D208AF700E34331 /* Flipped.flf in Resources */,
+				D78F187F1D208AF700E34331 /* Flower Power.flf in Resources */,
+				D78F18801D208AF700E34331 /* Four Tops.flf in Resources */,
+				D78F18811D208AF700E34331 /* Fraktur.flf in Resources */,
+				D78F18821D208AF700E34331 /* Fun Face.flf in Resources */,
+				D78F18831D208AF700E34331 /* Fun Faces.flf in Resources */,
+				D78F18841D208AF700E34331 /* Fuzzy.flf in Resources */,
+				D78F18851D208AF700E34331 /* Georgi16.flf in Resources */,
+				D78F18861D208AF700E34331 /* Georgia11.flf in Resources */,
+				D78F18871D208AF700E34331 /* Ghost.flf in Resources */,
+				D78F18881D208AF700E34331 /* Ghoulish.flf in Resources */,
+				D78F18891D208AF700E34331 /* Glenyn.flf in Resources */,
+				D78F188A1D208AF700E34331 /* Goofy.flf in Resources */,
+				D78F188B1D208AF700E34331 /* Gothic.flf in Resources */,
+				D78F188C1D208AF700E34331 /* Graceful.flf in Resources */,
+				D78F188D1D208AF700E34331 /* Gradient.flf in Resources */,
+				D78F188E1D208AF700E34331 /* Graffiti.flf in Resources */,
+				D78F188F1D208AF700E34331 /* Greek.flf in Resources */,
+				D78F18901D208AF700E34331 /* Heart Left.flf in Resources */,
+				D78F18911D208AF700E34331 /* Heart Right.flf in Resources */,
+				D78F18921D208AF700E34331 /* Henry 3D.flf in Resources */,
+				D78F18931D208AF700E34331 /* Hieroglyphs.flf in Resources */,
+				D78F18941D208AF700E34331 /* Hollywood.flf in Resources */,
+				D78F18951D208AF700E34331 /* Horizontal Left.flf in Resources */,
+				D78F18961D208AF700E34331 /* Horizontal Right.flf in Resources */,
+				D78F18971D208AF700E34331 /* ICL-1900.flf in Resources */,
+				D78F18981D208AF700E34331 /* Impossible.flf in Resources */,
+				D78F18991D208AF700E34331 /* Invita.flf in Resources */,
+				D78F189A1D208AF700E34331 /* Isometric1.flf in Resources */,
+				D78F189B1D208AF700E34331 /* Isometric2.flf in Resources */,
+				D78F189C1D208AF700E34331 /* Isometric3.flf in Resources */,
+				D78F189D1D208AF700E34331 /* Isometric4.flf in Resources */,
+				D78F189E1D208AF700E34331 /* Italic.flf in Resources */,
+				D78F189F1D208AF700E34331 /* Ivrit.flf in Resources */,
+				D78F18A01D208AF700E34331 /* Jacky.flf in Resources */,
+				D78F18A11D208AF700E34331 /* Jazmine.flf in Resources */,
+				D78F18A21D208AF700E34331 /* Jerusalem.flf in Resources */,
+				D78F18A31D208AF700E34331 /* JS Block Letters.flf in Resources */,
+				D78F18A41D208AF700E34331 /* JS Capital Curves.flf in Resources */,
+				D78F18A51D208AF700E34331 /* JS Stick Letters.flf in Resources */,
+				D78F18A61D208AF700E34331 /* Katakana.flf in Resources */,
+				D78F18A71D208AF700E34331 /* Kban.flf in Resources */,
+				D78F18A81D208AF700E34331 /* Keyboard.flf in Resources */,
+				D78F18A91D208AF700E34331 /* Knob.flf in Resources */,
+				D78F18AA1D208AF700E34331 /* Konto Slant.flf in Resources */,
+				D78F18AB1D208AF700E34331 /* Konto.flf in Resources */,
+				D78F18AC1D208AF700E34331 /* Larry 3D 2.flf in Resources */,
+				D78F18AD1D208AF700E34331 /* Larry 3D.flf in Resources */,
+				D78F18AE1D208AF700E34331 /* LCD.flf in Resources */,
+				D78F18AF1D208AF700E34331 /* Lean.flf in Resources */,
+				D78F18B01D208AF700E34331 /* Letters.flf in Resources */,
+				D78F18B11D208AF700E34331 /* Lil Devil.flf in Resources */,
+				D78F18B21D208AF700E34331 /* Line Blocks.flf in Resources */,
+				D78F18B31D208AF700E34331 /* Linux.flf in Resources */,
+				D78F18B41D208AF700E34331 /* Lockergnome.flf in Resources */,
+				D78F18B51D208AF700E34331 /* Madrid.flf in Resources */,
+				D78F18B61D208AF700E34331 /* Marquee.flf in Resources */,
+				D78F18B71D208AF700E34331 /* Maxfour.flf in Resources */,
+				D78F18B81D208AF700E34331 /* Merlin1.flf in Resources */,
+				D78F18B91D208AF700E34331 /* Merlin2.flf in Resources */,
+				D78F18BA1D208AF700E34331 /* Mike.flf in Resources */,
+				D78F18BB1D208AF700E34331 /* Mini.flf in Resources */,
+				D78F18BC1D208AF700E34331 /* Mirror.flf in Resources */,
+				D78F18BD1D208AF700E34331 /* Mnemonic.flf in Resources */,
+				D78F18BE1D208AF700E34331 /* Modular.flf in Resources */,
+				D78F18BF1D208AF700E34331 /* Moscow.flf in Resources */,
+				D78F18C01D208AF700E34331 /* Mshebrew210.flf in Resources */,
+				D78F18C11D208AF800E34331 /* Muzzle.flf in Resources */,
+				D78F18C21D208AF800E34331 /* Nancyj-Fancy.flf in Resources */,
+				D78F18C31D208AF800E34331 /* Nancyj-Improved.flf in Resources */,
+				D78F18C41D208AF800E34331 /* Nancyj-Underlined.flf in Resources */,
+				D78F18C51D208AF800E34331 /* Nancyj.flf in Resources */,
+				D78F18C61D208AF800E34331 /* Nipples.flf in Resources */,
+				D78F18C71D208AF800E34331 /* NScript.flf in Resources */,
+				D78F18C81D208AF800E34331 /* NT Greek.flf in Resources */,
+				D78F18C91D208AF800E34331 /* NV Script.flf in Resources */,
+				D78F18CA1D208AF800E34331 /* O8.flf in Resources */,
+				D78F18CB1D208AF800E34331 /* Ogre.flf in Resources */,
+				D78F18CC1D208AF800E34331 /* Old Banner.flf in Resources */,
+				D78F18CD1D208AF800E34331 /* OS2.flf in Resources */,
+				D78F18CE1D208AF800E34331 /* Patorjk-HeX.flf in Resources */,
+				D78F18CF1D208AF800E34331 /* Patorjk's Cheese.flf in Resources */,
+				D78F18D01D208AF800E34331 /* Pawp.flf in Resources */,
+				D78F18D11D208AF800E34331 /* Peaks Slant.flf in Resources */,
+				D78F18D21D208AF800E34331 /* Peaks.flf in Resources */,
+				D78F18D31D208AF800E34331 /* Pebbles.flf in Resources */,
+				D78F18D41D208AF800E34331 /* Pepper.flf in Resources */,
+				D78F18D51D208AF800E34331 /* Poison.flf in Resources */,
+				D78F18D61D208AF800E34331 /* Puffy.flf in Resources */,
+				D78F18D71D208AF800E34331 /* Puzzle.flf in Resources */,
+				D78F18D81D208AF800E34331 /* Pyramid.flf in Resources */,
+				D78F18D91D208AF800E34331 /* Rammstein.flf in Resources */,
+				D78F18DA1D208AF800E34331 /* Rectangles.flf in Resources */,
+				D78F18DB1D208AF800E34331 /* Red Phoenix.flf in Resources */,
+				D78F18DC1D208AF800E34331 /* Relief.flf in Resources */,
+				D78F18DD1D208AF800E34331 /* Relief2.flf in Resources */,
+				D78F18DE1D208AF800E34331 /* Reverse.flf in Resources */,
+				D78F18DF1D208AF800E34331 /* Roman.flf in Resources */,
+				D78F18E01D208AF800E34331 /* Rotated.flf in Resources */,
+				D78F18E11D208AF800E34331 /* Rounded.flf in Resources */,
+				D78F18E21D208AF800E34331 /* Rowan Cap.flf in Resources */,
+				D78F18E31D208AF800E34331 /* Rozzo.flf in Resources */,
+				D78F18E41D208AF800E34331 /* Runic.flf in Resources */,
+				D78F18E51D208AF800E34331 /* Runyc.flf in Resources */,
+				D78F18E61D208AF800E34331 /* S Blood.flf in Resources */,
+				D78F18E71D208AF800E34331 /* Santa Clara.flf in Resources */,
+				D78F18E81D208AF800E34331 /* Script.flf in Resources */,
+				D78F18E91D208AF800E34331 /* Serifcap.flf in Resources */,
+				D78F18EA1D208AF800E34331 /* Shadow.flf in Resources */,
+				D78F18EB1D208AF800E34331 /* Shimrod.flf in Resources */,
+				D78F18EC1D208AF800E34331 /* Short.flf in Resources */,
+				D78F18ED1D208AF800E34331 /* SL Script.flf in Resources */,
+				D78F18EE1D208AF800E34331 /* Slant Relief.flf in Resources */,
+				D78F18EF1D208AF800E34331 /* Slant.flf in Resources */,
+				D78F18F01D208AF800E34331 /* Slide.flf in Resources */,
+				D78F18F11D208AF800E34331 /* Small Caps.flf in Resources */,
+				D78F18F21D208AF800E34331 /* Small Isometric1.flf in Resources */,
+				D78F18F31D208AF800E34331 /* Small Keyboard.flf in Resources */,
+				D78F18F41D208AF800E34331 /* Small Poison.flf in Resources */,
+				D78F18F51D208AF800E34331 /* Small Script.flf in Resources */,
+				D78F18F61D208AF800E34331 /* Small Shadow.flf in Resources */,
+				D78F18F71D208AF800E34331 /* Small Slant.flf in Resources */,
+				D78F18F81D208AF800E34331 /* Small Tengwar.flf in Resources */,
+				D78F18F91D208AF800E34331 /* Small.flf in Resources */,
+				D78F18FA1D208AF800E34331 /* Soft.flf in Resources */,
+				D78F18FB1D208AF800E34331 /* Speed.flf in Resources */,
+				D78F18FC1D208AF800E34331 /* Spliff.flf in Resources */,
+				D78F18FD1D208AF800E34331 /* Stacey.flf in Resources */,
+				D78F18FE1D208AF800E34331 /* Stampate.flf in Resources */,
+				D78F18FF1D208AF800E34331 /* Stampatello.flf in Resources */,
+				D78F19001D208AF800E34331 /* Standard.flf in Resources */,
+				D78F19011D208AF800E34331 /* Star Strips.flf in Resources */,
+				D78F19021D208AF800E34331 /* Star Wars.flf in Resources */,
+				D78F19031D208AF800E34331 /* Stellar.flf in Resources */,
+				D78F19041D208AF800E34331 /* Stforek.flf in Resources */,
+				D78F19051D208AF800E34331 /* Stick Letters.flf in Resources */,
+				D78F19061D208AF800E34331 /* Stop.flf in Resources */,
+				D78F19071D208AF800E34331 /* Straight.flf in Resources */,
+				D78F19081D208AF800E34331 /* Stronger Than All.flf in Resources */,
+				D78F19091D208AF800E34331 /* Sub-Zero.flf in Resources */,
+				D78F190A1D208AF800E34331 /* Swamp Land.flf in Resources */,
+				D78F190B1D208AF800E34331 /* Swan.flf in Resources */,
+				D78F190C1D208AF800E34331 /* Sweet.flf in Resources */,
+				D78F190D1D208AF800E34331 /* Tanja.flf in Resources */,
+				D78F190E1D208AF800E34331 /* Tengwar.flf in Resources */,
+				D78F190F1D208AF800E34331 /* Test1.flf in Resources */,
+				D78F19101D208AF800E34331 /* The Edge.flf in Resources */,
+				D78F19111D208AF800E34331 /* Thick.flf in Resources */,
+				D78F19121D208AF800E34331 /* Thin.flf in Resources */,
+				D78F19131D208AF800E34331 /* THIS.flf in Resources */,
+				D78F19141D208AF800E34331 /* Thorned.flf in Resources */,
+				D78F19151D208AF800E34331 /* Three Point.flf in Resources */,
+				D78F19161D208AF800E34331 /* Ticks Slant.flf in Resources */,
+				D78F19171D208AF800E34331 /* Ticks.flf in Resources */,
+				D78F19181D208AF800E34331 /* Tiles.flf in Resources */,
+				D78F19191D208AF800E34331 /* Tinker-Toy.flf in Resources */,
+				D78F191A1D208AF800E34331 /* Tombstone.flf in Resources */,
+				D78F191B1D208AF800E34331 /* Train.flf in Resources */,
+				D78F191C1D208AF800E34331 /* Trek.flf in Resources */,
+				D78F191D1D208AF800E34331 /* Tsalagi.flf in Resources */,
+				D78F191E1D208AF800E34331 /* Tubular.flf in Resources */,
+				D78F191F1D208AF800E34331 /* Twisted.flf in Resources */,
+				D78F19201D208AF800E34331 /* Two Point.flf in Resources */,
+				D78F19211D208AF800E34331 /* Univers.flf in Resources */,
+				D78F19221D208AF800E34331 /* USA Flag.flf in Resources */,
+				D78F19231D208AF800E34331 /* Varsity.flf in Resources */,
+				D78F19241D208AF800E34331 /* Wavy.flf in Resources */,
+				D78F19251D208AF800E34331 /* Weird.flf in Resources */,
+				D78F19261D208AF800E34331 /* Wet Letter.flf in Resources */,
+				D78F19271D208AF800E34331 /* Whimsy.flf in Resources */,
+				D78F19281D208AF800E34331 /* Wow.flf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D703180C1D1CF4550023F596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70318141D1CF4550023F596 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D70318201D1CF4670023F596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A75E2F1D216DD40006B8F8 /* XHelp.swift in Sources */,
+				D774B2ED1D211CA9009A62E4 /* XFigfont.swift in Sources */,
+				D7D0DC801D207DF400460D61 /* FigletHeader.swift in Sources */,
+				D703182C1D1CF4680023F596 /* SourceEditorExtension.swift in Sources */,
+				D7D0DC7E1D207DF400460D61 /* Extensions.swift in Sources */,
+				D7D0DC7F1D207DF400460D61 /* Figlet.swift in Sources */,
+				D703182E1D1CF4680023F596 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D70318311D1CF4680023F596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D70318231D1CF4670023F596 /* Figlet */;
+			targetProxy = D70318301D1CF4680023F596 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D70318171D1CF4550023F596 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D70318181D1CF4550023F596 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D703181B1D1CF4550023F596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D703181C1D1CF4550023F596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D703181E1D1CF4550023F596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SETools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = africanswift.com.SETools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D703181F1D1CF4550023F596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SETools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = africanswift.com.SETools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D70318341D1CF4680023F596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Figlet/Figlet.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Figlet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = africanswift.com.SETools.Figlet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D70318351D1CF4680023F596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Figlet/Figlet.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Figlet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = africanswift.com.SETools.Figlet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D703180B1D1CF4550023F596 /* Build configuration list for PBXProject "SETools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D703181B1D1CF4550023F596 /* Debug */,
+				D703181C1D1CF4550023F596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D703181D1D1CF4550023F596 /* Build configuration list for PBXNativeTarget "SETools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D703181E1D1CF4550023F596 /* Debug */,
+				D703181F1D1CF4550023F596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D70318331D1CF4680023F596 /* Build configuration list for PBXNativeTarget "Figlet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D70318341D1CF4680023F596 /* Debug */,
+				D70318351D1CF4680023F596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D70318081D1CF4550023F596 /* Project object */;
+}

@@ -1,0 +1,16 @@
+
+XTender Help Menu
+-----------------
+
+The following tags are accepted:
+
+ 1. Fig Fonts Tags
+     - @figfont fontname e.g. Whimsy
+     - @figtitle text (text to be reproduced with font)
+     - @figlist (returns a comma separated list of the 275 fonts)
+
+ 2. Help Tags
+     - @help (displays this menu)
+
+
+Note: Undo is supported; so use CMD-Z to remove last addition
