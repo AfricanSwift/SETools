@@ -1,6 +1,5 @@
 //
 //          File:   XHelp.swift
-//       Project:   Xtender
 //    Created by:   African Swift
 
 import Foundation

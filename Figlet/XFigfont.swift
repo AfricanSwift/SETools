@@ -1,6 +1,5 @@
 //
 //          File:   XFigfont.swift
-//       Project:   Xtender
 //    Created by:   African Swift
 
 import Foundation

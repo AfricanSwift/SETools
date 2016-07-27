@@ -1,10 +1,6 @@
 //
-//  SourceEditorCommand.swift
-//  Figlet
-//
-//  Created by Vaughn on 2016/06/24.
-//  Copyright © 2016 africanswift. All rights reserved.
-//
+//          File:   SourceEditorCommand.swift
+//    Created by:   African Swift
 
 import Foundation
 import XcodeKit
